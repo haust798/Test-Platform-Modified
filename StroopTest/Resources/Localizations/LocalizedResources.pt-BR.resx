@@ -1,0 +1,2846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="activeAudio" xml:space="preserve">
+    <value>Ativa captura de áudio durante a execução do teste</value>
+  </data>
+  <data name="audioFile" xml:space="preserve">
+    <value>Arquivo de Lista de áudio</value>
+  </data>
+  <data name="audioList" xml:space="preserve">
+    <value>Listas de Audio: </value>
+  </data>
+  <data name="audioRecordSuccess" xml:space="preserve">
+    <value>Aúdio gravado com sucesso!</value>
+  </data>
+  <data name="backgroundColor" xml:space="preserve">
+    <value>Cor de fundo durante a apresentação dos estímulos</value>
+  </data>
+  <data name="beepDuration" xml:space="preserve">
+    <value>O beep deve durar mais do que 0 milissegundos</value>
+  </data>
+  <data name="choose" xml:space="preserve">
+    <value>escolher</value>
+  </data>
+  <data name="colorFile" xml:space="preserve">
+    <value>Arquivo de Lista de cores</value>
+  </data>
+  <data name="colors" xml:space="preserve">
+    <value>de Cores</value>
+  </data>
+  <data name="colorsList" xml:space="preserve">
+    <value>Lista de Cores</value>
+  </data>
+  <data name="colorWords" xml:space="preserve">
+    <value>Cor da palavra, para exposição do tipo Imagem e Palavra</value>
+  </data>
+  <data name="couldntEdit" xml:space="preserve">
+    <value>Edição não pode ser feita </value>
+  </data>
+  <data name="default" xml:space="preserve">
+    <value>padrao</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>O TestPlatform é uma plataforma de testes neuropsicológicos computadorizados para avaliação de funções executivas. O produto tem a proposta oferecer soluções inovando tecnologicamente de forma prática e dinâmica. Destinado a pesquisadores, alunos e usuários comuns. 
+
+Responsável Técnico:
+anacog@pobox.com - Ana Garcia
+
+Desenvolvedores: 
+hugohon - Hugo Honda Ferreira
+fabiolamfleury - Fabíola Malta Fleury
+gabrielalbino - Gabriel Batista Albino Silva; 
+2018; 
+Mais informações: 
+https://github.com/lab-neuro-comp/Test-Platform</value>
+  </data>
+  <data name="editProgram" xml:space="preserve">
+    <value>Editar Programa: </value>
+  </data>
+  <data name="emptyBox" xml:space="preserve">
+    <value>A caixa de texto não pode estar vazia!</value>
+  </data>
+  <data name="emptyList" xml:space="preserve">
+    <value>A lista está vazia!</value>
+  </data>
+  <data name="emptyListName" xml:space="preserve">
+    <value>O nome da lista deve ser preenchido.</value>
+  </data>
+  <data name="exclude" xml:space="preserve">
+    <value>Excluir: </value>
+  </data>
+  <data name="exclusionSucceeded" xml:space="preserve">
+    <value>excluída com sucesso!</value>
+  </data>
+  <data name="expandImages" xml:space="preserve">
+    <value>Expande a imagem até as bordas da tela</value>
+  </data>
+  <data name="experiment" xml:space="preserve">
+    <value>Experimento</value>
+  </data>
+  <data name="experimentFiles" xml:space="preserve">
+    <value>Caminho para os arquivos de dados de experimentos inválido.</value>
+  </data>
+  <data name="expoCancel" xml:space="preserve">
+    <value>A exposição foi cancelada.</value>
+  </data>
+  <data name="expoNumber" xml:space="preserve">
+    <value>O número de exposições deve ser maior do que zero.</value>
+  </data>
+  <data name="expoRandomize" xml:space="preserve">
+    <value>Exposição dos estímulos em ordem aleatória em relação à lista</value>
+  </data>
+  <data name="exportedFile" xml:space="preserve">
+    <value>Arquivo exportado com sucesso!</value>
+  </data>
+  <data name="expositionDuration" xml:space="preserve">
+    <value>Duração da exposição de cada estímulo</value>
+  </data>
+  <data name="expoTime" xml:space="preserve">
+    <value>O tempo de exposição deve ser maior do que zero.</value>
+  </data>
+  <data name="expoType" xml:space="preserve">
+    <value>Tipo de Exposição: </value>
+  </data>
+  <data name="fieldNotRight" xml:space="preserve">
+    <value>Algum campo não foi preenchido de forma correta.</value>
+  </data>
+  <data name="file" xml:space="preserve">
+    <value>Arquivo: </value>
+  </data>
+  <data name="fixpointColor" xml:space="preserve">
+    <value>Cor do ponto de fixação</value>
+  </data>
+  <data name="fixpointEx" xml:space="preserve">
+    <value>Tipo de ponto de fixação: cruz ou ponto</value>
+  </data>
+  <data name="fontSize" xml:space="preserve">
+    <value>Tamanho da fonte do texto, para exposição do tipo Palavra, Palavra com áudio, Imagem e palavra</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="imageFile" xml:space="preserve">
+    <value>Arquivo de Lista de imagens</value>
+  </data>
+  <data name="imageFileError" xml:space="preserve">
+    <value>Não pode apresentar a imagem. Você pode não ter permissão para ler este arquivo ou ele pode estar corrompido.\n</value>
+  </data>
+  <data name="imageList" xml:space="preserve">
+    <value>Lista de Imagens: </value>
+  </data>
+  <data name="instructionBox" xml:space="preserve">
+    <value>Escreva cada uma das intruções em linhas separadas.</value>
+  </data>
+  <data name="instructionBoxText" xml:space="preserve">
+    <value>O participante deve ser orientado para execução de forma clara e uniforme entre os experimentares e o grupo de participantes.&lt;br&gt;&lt;br&gt;Para o Stroop clássico as instruções básicas praticadas são:&lt;br&gt;'Nesta tarefa você deve falar o nome da cor em que as palavras estão pintadas.'&lt;br&gt;ou&lt;br&gt;'Nesta tarefa você deve ler a palavra apresentada na tela.'</value>
+  </data>
+  <data name="instructionsI" xml:space="preserve">
+    <value>Instruções apresentadas no início do programa - será apresentada um tela para cada linha escrita abaixo</value>
+  </data>
+  <data name="intervalsTime" xml:space="preserve">
+    <value>Tempo entre as tentativas</value>
+  </data>
+  <data name="intervalsTimeRandom" xml:space="preserve">
+    <value>Variação do tempo entre as tentativas</value>
+  </data>
+  <data name="intervalTime" xml:space="preserve">
+    <value>O tempo de intervalo deve ser maior do que zero.</value>
+  </data>
+  <data name="invalid" xml:space="preserve">
+    <value>  inválido</value>
+  </data>
+  <data name="invalidExpoType" xml:space="preserve">
+    <value>Tipo de Exposição inválido!</value>
+  </data>
+  <data name="invalidPath" xml:space="preserve">
+    <value>é um caminho inválido!</value>
+  </data>
+  <data name="list" xml:space="preserve">
+    <value>A lista '</value>
+  </data>
+  <data name="listExists" xml:space="preserve">
+    <value>Uma lista com este nome já existe.\nDeseja sobrescrevê-la?</value>
+  </data>
+  <data name="listNotSaved" xml:space="preserve">
+    <value>A lista não será salva</value>
+  </data>
+  <data name="listSaveSuccess" xml:space="preserve">
+    <value>' foi salva com sucesso</value>
+  </data>
+  <data name="markLengthError" xml:space="preserve">
+    <value>O campo da marca deve ser preenchido.</value>
+  </data>
+  <data name="markLengthError2" xml:space="preserve">
+    <value>A marca deve ser composta apenas de um caracter</value>
+  </data>
+  <data name="none" xml:space="preserve">
+    <value>Nenhum</value>
+  </data>
+  <data name="notEdit" xml:space="preserve">
+    <value>Edição não pode ser feita.</value>
+  </data>
+  <data name="notFilledProperlyMessage" xml:space="preserve">
+    <value>Algum campo não foi preenchido de forma correta.</value>
+  </data>
+  <data name="notFoundIn" xml:space="preserve">
+    <value>\nnão foi encontrado no local:\n</value>
+  </data>
+  <data name="numberExpositions" xml:space="preserve">
+    <value>Número de vezes em que os estímulos serão expostos</value>
+  </data>
+  <data name="participantNameAlphanumericError" xml:space="preserve">
+    <value>O texto deve ser composto apenas de caracteres alfanuméricos e sem espaços;\nExemplo: 'LuisAugusto'"</value>
+  </data>
+  <data name="participantNameLengthError" xml:space="preserve">
+    <value>O nome do participante deve ser preenchido.</value>
+  </data>
+  <data name="positionInvalid" xml:space="preserve">
+    <value>Quantidade de posições do estímulo inválidas, deve ser um dos seguintes valores: 1, 2, 4 ou 8.</value>
+  </data>
+  <data name="programEdit" xml:space="preserve">
+    <value>O programa contém parâmetros incorretos e/ou está incompleto!\nCorrija o programa na interface a seguir.</value>
+  </data>
+  <data name="programExists" xml:space="preserve">
+    <value>O programa já existe, deseja sobrescrevê-lo?</value>
+  </data>
+  <data name="programNotAlphanumeric" xml:space="preserve">
+    <value>Nome do programa deve ser composto apenas de caracteres alfanuméricos e sem espaços;\nExemplo: 'MeuPrograma'"</value>
+  </data>
+  <data name="programNotFilled" xml:space="preserve">
+    <value>O nome do programa deve ser preenchido.</value>
+  </data>
+  <data name="programNotSave" xml:space="preserve">
+    <value>O programa não será salvo!</value>
+  </data>
+  <data name="programSave" xml:space="preserve">
+    <value>O programa foi salvo com sucesso.</value>
+  </data>
+  <data name="programSaved" xml:space="preserve">
+    <value>O programa foi salvo com sucesso</value>
+  </data>
+  <data name="reactionTest" xml:space="preserve">
+    <value>Tempo de Reação</value>
+  </data>
+  <data name="reallyExclude" xml:space="preserve">
+    <value>Deseja realmente excluir </value>
+  </data>
+  <data name="selectDataFile" xml:space="preserve">
+    <value>Selecione um arquivo de dados!</value>
+  </data>
+  <data name="selectImage" xml:space="preserve">
+    <value>Selecione o arquivo de lista de imagem.</value>
+  </data>
+  <data name="selectPlace" xml:space="preserve">
+    <value>É necessário selecionar o local do arquivo antes de gravar.</value>
+  </data>
+  <data name="selectTraining" xml:space="preserve">
+    <value>Selecione um programa para ser seu treino!</value>
+  </data>
+  <data name="stroopTest" xml:space="preserve">
+    <value>Stroop</value>
+  </data>
+  <data name="subtitleActive" xml:space="preserve">
+    <value>Ativa legenda para estímulos do tipo imagem</value>
+  </data>
+  <data name="subtitleColor" xml:space="preserve">
+    <value>Cor da legenda apresentada</value>
+  </data>
+  <data name="subtitlePosition" xml:space="preserve">
+    <value>Posicionamento da legenda em relação aos estímulos</value>
+  </data>
+  <data name="testName" xml:space="preserve">
+    <value>Nome do esquema de apresentação de estímulos</value>
+  </data>
+  <data name="typeStimulus" xml:space="preserve">
+    <value>Categoria dos estímulos do programa</value>
+  </data>
+  <data name="unavailableExpo" xml:space="preserve">
+    <value>Tipo de exposição ainda não está disponível.</value>
+  </data>
+  <data name="validColor" xml:space="preserve">
+    <value>' contém valores inválidos!\n A lista de "cores deve conter apenas valores hexadecimais (ex: #000000)</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Versão</value>
+  </data>
+  <data name="wishToSave" xml:space="preserve">
+    <value>Deseja salvar o arquivo </value>
+  </data>
+  <data name="wordColorList" xml:space="preserve">
+    <value>Lista de Palavras com Cores</value>
+  </data>
+  <data name="wordFile" xml:space="preserve">
+    <value>Arquivo de Lista de palavras</value>
+  </data>
+  <data name="wordList" xml:space="preserve">
+    <value>Listas de Palavras: </value>
+  </data>
+  <data name="words" xml:space="preserve">
+    <value>de Palavras</value>
+  </data>
+  <data name="wordsList" xml:space="preserve">
+    <value>Lista de Palavras</value>
+  </data>
+  <data name="colorMatch" xml:space="preserve">
+    <value>A cor não segue o padrão hexadecimal: #000000</value>
+  </data>
+  <data name="exportDirectory" xml:space="preserve">
+    <value>Selecione um diretório válido onde ainda não há nenhuma exportação da plataforma</value>
+  </data>
+  <data name="fileNotFound" xml:space="preserve">
+    <value>Não foi possível encontrar o arquivo no caminho:</value>
+  </data>
+  <data name="lists" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="removeItem" xml:space="preserve">
+    <value>Selecione um arquivo para remover da lista.</value>
+  </data>
+  <data name="selectAudio" xml:space="preserve">
+    <value>Selecione o arquivo de lista de aúdios.</value>
+  </data>
+  <data name="selectColor" xml:space="preserve">
+    <value>Selecione o arquivo de lista de cores.</value>
+  </data>
+  <data name="selectWord" xml:space="preserve">
+    <value>Selecione o arquivo de lista de palavras.</value>
+  </data>
+  <data name="experimentHeader" xml:space="preserve">
+    <value>experimento\tprograma\ttipo Programa\t#\tParticipante\tdata\thorario Inicial\thorario Teste\tsequencia</value>
+  </data>
+  <data name="experimentName" xml:space="preserve">
+    <value>Nome do experimento deve ser composto apenas de caracteres alfanuméricos. \nExemplo: 'MeuExprimento'.</value>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>Arquivos importados com sucesso.</value>
+  </data>
+  <data name="intervalInvalid" xml:space="preserve">
+    <value>\nTempo de intervalo entre programas deve ser maior ou igual a zero (em milissegundos)</value>
+  </data>
+  <data name="parameter" xml:space="preserve">
+    <value>Parâmetro escrito no arquivo como: '</value>
+  </data>
+  <data name="parameterShould" xml:space="preserve">
+    <value>'\ndeveria ser igual ao nome no arquivo: '</value>
+  </data>
+  <data name="audioConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome da Lista&lt;/td&gt;
+	    &lt;td&gt;Define o nome da lista que será escolhida na definição do programa. É recomendável que o nome da lista caracterize o conjunto de elementos escolhido e a etapa que compreende, por exemplo, “Victoria1”. A ordem em que os elementos são informados será mantida na respectiva lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Criação da lista de áudios&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Áudios&lt;/td&gt;
+            &lt;td&gt;Seleciona a pasta que contém os arquivos de áudio a serem colocados na lista pelo botão “Abrir”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Apagar Item&lt;/td&gt;
+            &lt;td&gt;Exclui da lista o arquivo de áudio selecionado com o botão “Apagar”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Mover Item&lt;/td&gt;
+            &lt;td&gt;Reposiciona o arquivo de áudio selecionado na lista com os botões “Acima” e “Abaixo”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Reproduzir áudio&lt;/td&gt;
+            &lt;td&gt;Representa o arquivo de áudio selecionado utilizando os dispositivos de som ativos do computador. Na lista são apresentados o Nome do Arquivo escolhido e a Localização&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="imageConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome&lt;/td&gt;
+	    &lt;td&gt;Define o nome da lista que será escolhida na definição do programa. É recomendável que o nome da lista caracterize o conjunto de elementos escolhido e a etapa que compreende, por exemplo, “Victoria1”. A ordem em que os elementos são informados será mantida na respectiva lista."
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Opções da lista&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Imagens&lt;/td&gt;
+            &lt;td&gt;Seleciona a pasta que contém as imagens a serem inseridos na lista pelo botão “Abrir”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Apagar Item&lt;/td&gt;
+            &lt;td&gt;Exclui da lista o arquivo de imagem selecionado com o botão “Apagar”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Mover Item&lt;/td&gt;
+            &lt;td&gt;Move o arquivo na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="newAudioInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Exibição de Aúdios de Testes&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Lista&lt;/td&gt;
+	    &lt;td&gt;Nessa tela são exibidos os aúdios gravados no decorrer de testes executados anteriormente. Os aúdios da execução do teste serão gravados em arquivo nomeado com o programa escolhido e a identificação do participante, caso já tenha ocorrido esta combinação os novos audios serão adicionados ao mesmo arquivo.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Criação de arquivos de aúdio no formato WAV&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar"&gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+            &lt;td&gt;Criação de áudio&lt;/td&gt;
+            &lt;td&gt;Nessa tela é possível a gravação de aúdios no formato WAV para serem utilizados como arquivos em listas de aúdio. A gravação inicia-se ao clicar no botão Gravar e é finalizada, podendo ser salva, no botão Parar/Salvar&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="stroopConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome do programa&lt;/td&gt;
+            &lt;td&gt;Deve ser preenchido com o nome do programa que será criado. O nome deve conter apenas caracteres alfanuméricos e não deve possuir espaço. Esse mesmo nome será utilizado na hora de escolher o programa que será execultado, na página de resultados e importação/exportação&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Exposição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo de estimulo&lt;/td&gt;
+            &lt;td&gt;
+               Nesse campo deve ser escolhido um dos tipos de estimulo disponíveis, são eles:&lt;br&gt;
+               &lt;ul&gt;
+                  &lt;li&gt;Palavra: Nesse modo deve ser escolhido uma lista de palavras e uma lista de cores para a palavra, e a partir disso o programa realizará a exposição de palavras coloridas&lt;/li&gt;
+                  &lt;li&gt;Imagem: Nesse tipo deve ser escolhido uma lista de imagens e a partir disso o programa realizará a exposição das imagens contidas na lista.&lt;/li&gt;
+                  &lt;li&gt;Imagem e palavra: Nesse tipo deve ser escolhido uma lista de imagens e uma de palavras. O programa gerado exibirá alternadamente um item de cada lista por vez.&lt;/li&gt;
+                  &lt;li&gt;Palavra com áudio: Nesse tipo deve ser selecionado uma lista de palavras e outra de áudio que serão reproduzidos pelo programa na exposição de palavras coloridas com exposição de áudio.&lt;/li&gt;
+                  &lt;li&gt;Imagem com áudio: Nesse tipo deve ser selecionado uma lista de imagens e outra de áudio que serão reproduzidos pelo programa. A exposição &lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Número de tentativas&lt;/td&gt;
+            &lt;td&gt;Define a quantidade de tentativas do úsuario. O número de tentativas equivale ao número de estimulos que serão mostrados.&lt;br&gt;Quando o número de itens nas listas é menor que o número de tentativas, será utilizada a quantidade de itens das listas repetindo os itens o necessário para atingir o número de tentativas. Da mesma forma, quando o número de itens nas listas é maior que o número de tentativas, será utilizada a quantidade de itens das listas correspondente ao número de tentativas. &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Ordem aleatória
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se a exposição dos estímulos será feita de forma aleatória em relação a ordem da lista.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Tamanho da palavra
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica o tamanho da fonte do texto, para exposição do tipo "Palavra", "Palavra com áudio" ou "Imagem e palavra". O tamanho padrão é 160.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Cor da palavra
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica a cor da palavra, para exposição do tipo "Palavra e Imagem" ou "Imagem e Palavra". A cor padrão é preta.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Expandir imagem
+            &lt;/td&gt;
+            &lt;td&gt;
+               Define a expansão da imagem no limite proporcional à tela. Não podeocorrer simultaneamente à apresentação de legenda.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Girar Imagem
+            &lt;/td&gt;
+            &lt;td&gt;
+               Define a rotação da imagem no ângulo e sentido indicados na lista.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Listas &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Palavras
+            &lt;/td&gt;
+            &lt;td&gt;
+               Carrega a lista de palavras que serão apresentadas para os tipos "Palavra" e "Palavra com Áudio". A exposição não aleatória seguirá a ordem das palavras na lista.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cores&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de cores das palavras que serão apresentadas para os tipos "Palavra" e "Palavra com Áudio". A exposição não aleatória seguirá a ordem das cores na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Imagens&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de imagens que serão apresentadas para os tipos "Imagem", "Imagem com Áudio" e "Imagem e Palavra". A exposição não aleatória seguirá a ordem das imagens na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Áudios&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de áudios que serão reproduzidos no teste para os tipos "Palavra com Áudio" e "Imagem com Áudio". A exposição não aleatória seguirá a ordem dos áudios na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Tempo &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Exposição(ms)
+            &lt;/td&gt;
+            &lt;td&gt;
+               Define a duração em milissegundos da exposição do estímulo escolhido, palavra ou imagem.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Intervalo(ms)&lt;/td&gt;
+            &lt;td&gt;Define o tempo em milissegundos entre as tentativas.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tempo Intervalo Variável &lt;/td&gt;
+            &lt;td&gt;Indica que o intervalo terá a duração variada aleatoriamente a partir de 400ms até o tempo de intervalo informado.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Atraso &lt;/td&gt;
+            &lt;td&gt; Define o tempo em milissegundos entre os estímulos pareados para os tipos "palavra", "imagem" ou  "imagem e palavra". Se não informado, será usado o tempo de intervalo.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Legenda &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Ativar&lt;/td&gt;
+            &lt;td&gt;Indica se a exposição imagem terá legenda. Ao ativar, deve ser selecionada alista de palavras a serem apresentadas como legenda.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor&lt;/td&gt;
+            &lt;td&gt;Indica a cor da legenda. Será utilizada a cor preta, se não informado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Posição&lt;/td&gt;
+            &lt;td&gt; Indica o local que será colocada a legenda em relação ao estímulo: ←, àesquerda (imagens); ↑, acima (palavras e imagens); →, à direita(imagens); ↓, abaixo (palavras e imagens); ・, ao centro (imagens); Aleatória, variar aposição, de acordo com o tipo do estímulo&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Ponto de fixação &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo&lt;/td&gt;
+            &lt;td&gt;Indica a forma do ponto de fixação: + ou ・&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor do ponto&lt;/td&gt;
+            &lt;td&gt;Indica a cor do ponto de fixação.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Outros  &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Capturar Áudio durante Execução &lt;/td&gt;
+            &lt;td&gt;Indica que as respostas do usuário serão gravadas automaticamente durante a execução.Será gerado um arquivo de áudio na pasta de dados. Exige o arquivo NAudio.dll esteja na mesma pasta do teste. O padrão é selecionado.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor de Fundo &lt;/td&gt;
+            &lt;td&gt;Define a cor tela por trás do estímulo durante a apresentação. O padrão é tela cinza.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Instruções &lt;/td&gt;
+            &lt;td&gt;Descreve as orientações para o participante sobre a execução do teste. Cada linha informada será apresentada em uma tela durante 4 segundos.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="showAudioInstructions" xml:space="preserve">
+    <value />
+  </data>
+  <data name="showDataInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exportar como .cvs&lt;/td&gt;
+            &lt;td&gt;Exporta os resultados para um arquivo com valores separados por vigula, que podem ser abertis por programas editores de planilhas (ex: libre office).&lt;/td&gt;
+         &lt;/tr&gt;
+	 &lt;tr&gt;
+	    &lt;td&gt;Reproduzir áudio&lt;/td&gt;
+	    &lt;td&gt;Opção para transmitir o áudio gravado durante a execução do teste, se o programa utilizado tinha esta opção.&lt;/td&gt;
+         &lt;/tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Resultados&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;programa&lt;/td&gt;
+            &lt;td&gt;Indica o nome do programa que estava sendo executado no momento do estimulo.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Participante&lt;/td&gt;
+            &lt;td&gt;Indica o nome do participante&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Indica a data em que o programa foi executado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Horario&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que o usuário iniciou o teste&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tempo(ms)&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que a exposição ocorreu&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Sequência&lt;/td&gt;
+            &lt;td&gt;Indica a ordem cronológica em que os estímulos apareceram para o usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo estimulo&lt;/td&gt;
+            &lt;td&gt;Indica qual tipo de estimulo foi exibido ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Legenda&lt;/td&gt;
+            &lt;td&gt;Indica qual foi a legenda exibida ao usuário&lt;/td&gt;
+         &lt;/tr&gt;	
+         &lt;tr&gt;
+            &lt;td&gt;Posição legenda&lt;/td&gt;
+            &lt;td&gt;Indica em qual posição a legenda foi exibida&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Estimulo&lt;/td&gt;
+            &lt;td&gt;Indica o nome do estimulo que foi exibido ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor&lt;/td&gt;
+            &lt;td&gt;Indica a cor que o estimulo apareceu ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Audio&lt;/td&gt;
+            &lt;td&gt;Informação se houve captura de áudio durante o estimulo&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="technicalInformation" xml:space="preserve">
+    <value>&lt;h1&gt; 	Informações Técnicas &lt;/h1&gt;
+&lt;p&gt;
+	 
+&lt;/p&gt;
+&lt;p&gt;
+	Após instalação, recomenda-se apenas a utilização do atalho que é criado na área de trabalho, não mexendo nas bibliotecas e arquivos que são utilizados pela plataforma.
+&lt;/p&gt;
+&lt;p&gt;
+	Toda a configuração de programas, lista e experimento criadas são armazenadas em arquivos formato texto, que não devem ser acessados diretamente, apenas via aplição. Além desses arquivos, são utilizadas bibliotecas de aúdio e manipulação de arquivos (.zip) e arquivos especificos de localização (no caso dessa versão, arquivos para português brasileiro).
+&lt;/p&gt;
+&lt;p&gt;
+	Esta aplicação foi desenvolvida utilizando a linguagem C# na plataforma IDE Visual Studio, compatível com sistema operacional Windows Vista ou superior.
+&lt;/p&gt;
+&lt;p&gt;
+	Utilize o link
+	&lt;a href="https://github.com/lab-neuro-comp/Test-Platform/releases"&gt;
+		 Repositório Github - TestPlatform (Releases)
+	&lt;/a&gt;
+	 para baixar arquivos de atualizações.
+&lt;/p&gt;
+&lt;p&gt;
+	Para instalação, o arquivo executável deve ser colocado em uma pasta exclusiva para aplicação onde serão organizadas as pastas de operação após a primeira execução do teste conforme descrito a seguir:
+&lt;/p&gt;
+&lt;p&gt;
+	- TestPlatform (pasta criada pelo usuário para uso exclusivo da aplicação)
+	&lt;br /&gt;
+	 -- TestFiles (arquivos gerados pela aplicação para execução do teste) 
+&lt;/p&gt;
+&lt;p&gt;
+	Os arquivos e pastas dentro de TestFiles não devem ser acessadas, correndo o risco de corromper arquivos e torná-los inacessíveis para o programa!
+&lt;/p&gt;
+&lt;p&gt;
+	Para atualização, deve ser executado o arquivo de instalação da nova versão na mesma pasta em que a versão anterior tinha sido instalada.
+&lt;/p&gt;</value>
+  </data>
+  <data name="viewHelp" xml:space="preserve">
+    <value>&lt;h1&gt;TestPlatform&lt;/h1&gt;
+&lt;div&gt;
+&lt;p&gt;Qual &amp;eacute; a sua d&amp;uacute;vida?&amp;nbsp;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#how"&gt; Como funciona a plataforma &lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#lists"&gt; Listas &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#programs"&gt; Programas &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#experiments"&gt; Experimentos &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#exec"&gt; Execu&amp;ccedil;&amp;atilde;o &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#results"&gt; Resultados &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#import"&gt; Importa&amp;ccedil;&amp;atilde;o/exporta&amp;ccedil;&amp;atilde;o &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#stroop"&gt; Stroop &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#reaction"&gt; Tempo de Rea&amp;ccedil;&amp;atilde;o &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#matching"&gt; Teste de Escolha &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#update"&gt; Atualiza&amp;ccedil;&amp;otilde;es da Plataforma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#recommend"&gt; Recomenda&amp;ccedil;&amp;otilde;es &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#contact"&gt; Gostaria de entrar em contato? &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3 id="how"&gt;Como funciona a plataforma&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;A plataforma &amp;eacute; utilizada para defini&amp;ccedil;&amp;atilde;o, execu&amp;ccedil;&amp;atilde;o e an&amp;aacute;lise de resultados de testes neuropsicol&amp;oacute;gicos dentro de paradigmas pr&amp;eacute; definidos. Ela trabalha com unidades chamadas de listas, programas e experimentos.&lt;/p&gt;
+&lt;p&gt;As &lt;strong&gt; listas &lt;/strong&gt; s&amp;atilde;o est&amp;iacute;mulos que s&amp;atilde;o definidos previamente &amp;agrave; realiza&amp;ccedil;&amp;atilde;o do teste, podendo ser palavras, cores, imagens ou audios.&lt;/p&gt;
+&lt;p&gt;Os &lt;strong&gt; programas&amp;nbsp; &lt;/strong&gt; s&amp;atilde;o protocolos definidos pelo pesquisador, podendo ser de um dos seguintes tipos de teste: Stroop, Tempo de Rea&amp;ccedil;&amp;atilde;o ou Teste de Escolha. Estes tipos representam diferentes paradigmas.&lt;/p&gt;
+&lt;p&gt;Os &lt;strong&gt; experimentos &lt;/strong&gt; &amp;nbsp;s&amp;atilde;o cole&amp;ccedil;&amp;otilde;es de programas, para que possam ser executados em sequ&amp;ecirc;ncia.&lt;/p&gt;
+&lt;p&gt;Cada p&amp;aacute;gina da plataforma possui um bot&amp;atilde;o de ajuda, para que informa&amp;ccedil;&amp;otilde;es espec&amp;iacute;ficas sejam fornecidas. A barra lateral esquerda apresenta as p&amp;aacute;ginas que s&amp;atilde;o naveg&amp;aacute;veis pelo programa.&lt;/p&gt;
+&lt;p&gt;O fluxo a seguir descreve como um programa pode ser criado, executado e ter os seus resultados obtidos na plataforma:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/procedure.png?raw=true" alt="Fluxogram" width="521" height="403" /&gt;&lt;/p&gt;
+&lt;h4 id="lists"&gt;Listas&lt;/h4&gt;
+&lt;p&gt;As listas definidas ser&amp;atilde;o utilizadas pelos programas. Escolhe-se o tipo de lista e cria-se ou edita, fornecendo o nome que ser&amp;aacute; referenciado pelo programa e o conte&amp;uacute;do da lista. Para cria&amp;ccedil;&amp;atilde;o da lista de a&amp;uacute;dios &amp;eacute; necess&amp;aacute;rio que o arquivo seja do tipo ".wav", caso desejar, voc&amp;ecirc; pode gravar arquivos de a&amp;uacute;dio na aba de "A&amp;uacute;dios" das listas. Os arquivos de imagens podem ser de tipos diversos (.png, .jpeg, .bmp, dentre outros). As listas de cores ser&amp;atilde;o definidas de acordo com a nomeclatura hexadecimal.&lt;/p&gt;
+&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/lists.png?raw=true" alt="ListsMenu"/&gt;
+&lt;h4 id="programs"&gt;Programas&lt;/h4&gt;
+&lt;p&gt;Os programas s&amp;atilde;o as configura&amp;ccedil;&amp;otilde;es de um teste podendo ser criados nos seguintes paradigmas:&amp;nbsp; &lt;a href="#stroop"&gt; Stroop &lt;/a&gt; , &lt;a href="#reaction"&gt; Tempo de Rea&amp;ccedil;&amp;atilde;o &lt;/a&gt; , &lt;a href="#matching"&gt; Teste de Escolha &lt;/a&gt; . Cada programa pode ou n&amp;atilde;o ter listas (dependendo de como foi definido) e pode ser alterado, exclu&amp;iacute;do ou recuperado a qualquer momento.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/programs.png?raw=true" alt="programs" /&gt;&lt;/p&gt;
+&lt;h4 id="exec"&gt;Execu&amp;ccedil;&amp;atilde;o&lt;/h4&gt;
+&lt;p&gt;Para executar um programa ou experimento, deve-se preencher os dados na barra, selecionando o que ser&amp;aacute; executado, qual ser&amp;aacute; o participante e qual ser&amp;aacute; a marca.&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt; marca &lt;/strong&gt; &amp;eacute; um sinal de teclado gerado pelo programa no instante em que um est&amp;iacute;mulo &amp;eacute; mostrado, utilizado normalmente quando um programa est&amp;aacute; sendo executado no fundo em conjunto com a plataforma, como exemplo o neuronspectrum, para coletar dados mais precisos.&lt;/p&gt;
+&lt;p&gt;Ap&amp;oacute;s o preenchimento das entradas, basta clicar no bot&amp;atilde;o executar que o teste ocorrer&amp;aacute; e os resultados ser&amp;atilde;o gerados.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/execBar.png?raw=true" alt="execBar"/&gt;&lt;/p&gt;
+&lt;h4 id="results"&gt;Resultados&lt;/h4&gt;
+&lt;p&gt;Os resultados s&amp;atilde;o exibidos em p&amp;aacute;ginas de acordo com o tipo de teste realizado, em tabelas que podem ser exportadas para excel (.csv).&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/results.png?raw=true" alt="results" width="521" height="403" /&gt;&lt;/p&gt;
+&lt;p&gt;Quando um experimento &amp;eacute; executado, s&amp;atilde;o geradas as tabelas, al&amp;eacute;m do experimento, dos respectivos programas que foram executados.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
+&lt;h4 id="results"&gt;Importa&amp;ccedil;&amp;atilde;o/Exporta&amp;ccedil;&amp;atilde;o&lt;/h4&gt;
+&lt;p&gt;Caso seja necess&amp;aacute;rio utilizar listas, programas ou experimentos em mais de um computador, &amp;eacute; poss&amp;iacute;vel exportar arquivos e export&amp;aacute;-los dentro da plataforma, ao acessar essas funcionalidades no menu.&lt;/p&gt;
+&lt;div&gt;
+&lt;h3 id="stroop"&gt;Stroop&lt;/h3&gt;
+&lt;p&gt;&lt;span style="font-weight: 400;"&gt; Prop&amp;otilde;e a apresenta&amp;ccedil;&amp;atilde;o de elementos em sequ&amp;ecirc;ncia com tempos de exposi&amp;ccedil;&amp;atilde;o e intervalos programados.&amp;nbsp; &lt;/span&gt; De acordo com o paradigma do Stroop, os elementos apresentados carregam algum conflito sem&amp;acirc;ntico, como o cl&amp;aacute;ssico palavras de cores coloridas ( &lt;span style="color: #00ff00;"&gt; azul &lt;/span&gt; ). O StroopTest disponibiliza diferentes categorias de est&amp;iacute;mulos - palavra, imagem, &amp;aacute;udio - que podem ser combinadas individualmente ou em par promovendo o efeito Stroop em diversas e &amp;nbsp;pr&amp;oacute;prias vers&amp;otilde;es.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3 id="reaction"&gt;Tempo de Rea&amp;ccedil;&amp;atilde;o&lt;/h3&gt;
+&lt;p&gt;Prop&amp;otilde;e a apresenta&amp;ccedil;&amp;atilde;o de elementos em tela que devem ter uma interpreta&amp;ccedil;&amp;atilde;o a partir de uma resposta emitida pelo participante atrav&amp;eacute;s do teclado ou toque de tela. De acordo com o paradigma de tempo de rea&amp;ccedil;&amp;atilde;o, essa resposta deve ser dada o mais r&amp;aacute;pido poss&amp;iacute;vel, de modo que a resposta esperada &amp;eacute; surge a partir do momento em que o elemento &amp;eacute; exibido na tela, e pode haver resposta antecipada (comission) ou n&amp;atilde;o haver resposta ap&amp;oacute;s a exibi&amp;ccedil;&amp;atilde;o. O ReactionTest disponibiliza diferentes categorias de est&amp;iacute;mulos - formas geom&amp;eacute;tricas, imagem, palavras - que possibilitam a avalia&amp;ccedil;&amp;atilde;o do tempo de rea&amp;ccedil;&amp;atilde;o em diversas e pr&amp;oacute;prias vers&amp;otilde;es.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3 id="matching"&gt;Teste de Escolha&lt;/h3&gt;
+&lt;p&gt;Os testes de Escolha de Acordo Com o (ou Diferente do) Modelo com Atraso, &lt;br /&gt; Delay matching or non-matching- to-sample &amp;ndash; DMTS/DNMTS, s&amp;atilde;o testes &lt;br /&gt; largamente utilizados no reconhecimento de mem&amp;oacute;ria visual.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="update"&gt;Atualiza&amp;ccedil;&amp;otilde;es da Plataforma&lt;/h3&gt;
+&lt;p&gt;Caso queira conferir se sua aplica&amp;ccedil;&amp;atilde;o est&amp;aacute; atualizada, veja a o &amp;uacute;ltimo lan&amp;ccedil;amento em: &amp;nbsp;&lt;a href="https://github.com/lab-neuro-comp/Test-Platform/releases/latest"&gt;https://github.com/lab-neuro-comp/Test-Platform/releases/latest&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Voc&amp;ecirc; deve seguir os passos:&amp;nbsp;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Verificar o n&amp;uacute;mero de vers&amp;atilde;o do "latest release";&lt;/li&gt;
+&lt;li&gt;Verificar a vers&amp;atilde;o da sua aplica&amp;ccedil;&amp;atilde;o instalada;&lt;/li&gt;
+&lt;li&gt;Baixar a vers&amp;atilde;o mais nova;&lt;/li&gt;
+&lt;li&gt;Instalar na mesma pasta da vers&amp;atilde;o anterior.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Veja a vers&amp;atilde;o do &amp;uacute;ltimo lan&amp;ccedil;amento:&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/release.png?raw=true" alt="release" /&gt;&lt;/p&gt;
+&lt;p&gt;E veja a vers&amp;atilde;o do seu programa:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;img src="https://github.com/lab-neuro-comp/Test-Platform/blob/master/StroopTest/Resources/help_images/version.png?raw=true" alt="about" /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id="recommend"&gt;Recomenda&amp;ccedil;&amp;otilde;es&lt;/h3&gt;
+&lt;p&gt;&amp;nbsp;Para utiliza&amp;ccedil;&amp;atilde;o do programa &amp;eacute; recomend&amp;aacute;vel a utiliza&amp;ccedil;&amp;atilde;o de sistema operacional Windows 7 ou superior. Tamb&amp;eacute;m &amp;eacute; sugerido que na utiliza&amp;ccedil;&amp;atilde;o da grava&amp;ccedil;&amp;atilde;o de a&amp;uacute;dios, seja utilizado um dispositivo que seja compat&amp;iacute;vel com seu computador e que tenha sido previamente testado.&lt;/p&gt;
+&lt;div&gt;
+&lt;h3 id="contact"&gt;Gostaria de entrar em contato?&lt;/h3&gt;
+&lt;p&gt;Caso encontre algum problema preencha este formul&amp;aacute;rio:&amp;nbsp; &lt;a href="https://github.com/lab-neuro-comp/Test-Platform/issues/new"&gt; https://github.com/lab-neuro-comp/Test-Platform/issues/new &lt;/a&gt; relatando o ocorrido, ou envie um email para algum dos respons&amp;aacute;veis pelo projeto. Recomendamos entrar em contato caso n&amp;atilde;o consiga tirar uma d&amp;uacute;vida, ou tamb&amp;eacute;m tenha sugest&amp;otilde;es!&lt;/p&gt;
+&lt;table style="height: 132px; border-color: #000000; width: 627px; float: left;" border="1"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 134.182px;"&gt;Nome&lt;/td&gt;
+&lt;td style="width: 174.909px;"&gt;Atribui&amp;ccedil;&amp;atilde;o&lt;/td&gt;
+&lt;td style="width: 298.545px;"&gt;Contato (GitHub/Email)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 134.182px;"&gt;Ana Garcia&lt;/td&gt;
+&lt;td style="width: 174.909px;"&gt;Respons&amp;aacute;vel T&amp;eacute;cnico&lt;/td&gt;
+&lt;td style="width: 298.545px;"&gt;anacog/anacog@pobox.com&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 134.182px;"&gt;Fab&amp;iacute;ola Fleury&lt;/td&gt;
+&lt;td style="width: 174.909px;"&gt;Desenvolvedora&lt;/td&gt;
+&lt;td style="width: 298.545px;"&gt;fabiolamfleury/fabiola.mfleury@gmail.com&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 134.182px;"&gt;Gabriel Albino&lt;/td&gt;
+&lt;td style="width: 174.909px;"&gt;Desenvolvedor&lt;/td&gt;
+&lt;td style="width: 298.545px;"&gt;gabrielalbino/enggabrielalbino@gmail.com&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+  </data>
+  <data name="wordColorConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome&lt;/td&gt;
+	    &lt;td&gt;Indica o nome da lista. O nome da lista deve conter apenas caracteres alfanumericos e não deve possuir espaços.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Opções da lista&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Lista de Palavras&lt;/td&gt;
+            &lt;td&gt;Quando a caixa da lista de palavras estiver marcada, será salva a lista de palavras criada&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Lista de Cores&lt;/td&gt;
+            &lt;td&gt;Quando a caixa da lista de palavras estiver marcada, será salva a lista de cores criada. Se ambas as caixas estiveram marcadas, ambas listas serão salvas.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Novo Item&lt;/td&gt;
+            &lt;td&gt;Abre uma tela para preencher uma nova palavra e sua cor. A cor padrão é preto.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Apagar Item&lt;/td&gt;
+            &lt;td&gt;Exclui da lista a palavra e sua cor correspondente selecionada com o botão “Apagar”.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Mover Item&lt;/td&gt;
+            &lt;td&gt;Reposiciona a palavra colorida selecionado na lista com os botões “Acima” e “Abaixo”.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="backgroundColorError" xml:space="preserve">
+    <value>Cor de Fundo do programa deve ser 'false' ou um código hexadecimal de cor</value>
+  </data>
+  <data name="defaulStroopProgram" xml:space="preserve">
+    <value>padrao 16 1000 true 1000 False padrao_words.lst padrao_color.lst false true false 1 false txt false false 160 false false false false 0 0 false false</value>
+  </data>
+  <data name="defaultColorList" xml:space="preserve">
+    <value>#F8E000 #007BB7 #7EC845 #D01C1F</value>
+  </data>
+  <data name="defaultReactionInstructions1" xml:space="preserve">
+    <value>Serão apresentados quadrados de forma aleatória. Aperte a barra de espaço quando ver o quadrado.</value>
+  </data>
+  <data name="defaultReactionInstructions2" xml:space="preserve">
+    <value>A tarefa vai começar agora</value>
+  </data>
+  <data name="defaultReactionProgram" xml:space="preserve">
+    <value>padrao 12 1000 50 2000 false false #000000 False 0 #FFFF00 shapes false false + #FF0000 True square, False 4 space false false 10 false false</value>
+  </data>
+  <data name="defaultReactionProgramError" xml:space="preserve">
+    <value>Erro ao criar o programa padrão do teste de tempo de reação.</value>
+  </data>
+  <data name="defaultStroopInstruction1" xml:space="preserve">
+    <value>Serão apresentadas palavras coloridas de forma aleatória. Palavras surgirão rapidamente e em seguida desaparecerão</value>
+  </data>
+  <data name="defaultStroopInstruction2" xml:space="preserve">
+    <value>Diga a cor em que a palavra está escrita</value>
+  </data>
+  <data name="defaultStroopInstruction3" xml:space="preserve">
+    <value>A tarefa vai começar agora</value>
+  </data>
+  <data name="defaultWordList" xml:space="preserve">
+    <value>amarelo azul verde vermelho</value>
+  </data>
+  <data name="expositionTypeError" xml:space="preserve">
+    <value>Tipo de exposição deve ser um dos seguintes</value>
+  </data>
+  <data name="fileName" xml:space="preserve">
+    <value>Nome do arquivo</value>
+  </data>
+  <data name="fileNameError" xml:space="preserve">
+    <value>de lista deve ter terminação .lst</value>
+  </data>
+  <data name="fileNameError1" xml:space="preserve">
+    <value>Nome do programa contido dentro do arquivo deve ser igual ao nome do arquivo. </value>
+  </data>
+  <data name="fixPointColorError" xml:space="preserve">
+    <value>Cor do ponto de fixação deve ser 'false' ou um código hexadecimal de cor</value>
+  </data>
+  <data name="fixPointError" xml:space="preserve">
+    <value>O ponto de fixação do programa deve ser representado por:\n'+' - ponto de fixação cruz\n'o' - ponto de fixação circulo\n'false' - se não houver ponto;</value>
+  </data>
+  <data name="notCreated" xml:space="preserve">
+    <value>não foi escrito\n\n</value>
+  </data>
+  <data name="reactionTestHeader" xml:space="preserve">
+    <value>Programa\t#\tParticipante\tData\tHorário inicial\tHorário exposição\tTR(ms)\tIntervalo(ms)\tIntervalo estimado(ms)\tExposição tempo(ms)\tExposicao(ms)\tSequência\tPosição\tResposta usuário\tTipo estímulo\tLista1\tEstímulo1\tLista2\tEstímulo2\tCor do estímulo\tBeep</value>
+  </data>
+  <data name="responseTypeError" xml:space="preserve">
+    <value>Tipo de resposta selecionado inválido. As opções válidas são: barra de espaço ou setas.</value>
+  </data>
+  <data name="stroopResultHeader" xml:space="preserve">
+    <value>programa\t#\tParticipante\tdata\thorario\ttempo(ms)\tsequencia\ttipo estimulo\tlegenda\tposicao legenda\testimulo\tcor\taudio</value>
+  </data>
+  <data name="subtitleColorError" xml:space="preserve">
+    <value>Cor da Legenda deve ser 'false' ou um código hexadecimal de cor</value>
+  </data>
+  <data name="subtitlePositionError" xml:space="preserve">
+    <value>Posição da legenda</value>
+  </data>
+  <data name="subtitlePositionError1" xml:space="preserve">
+    <value>deve ser um número de 1 a 5</value>
+  </data>
+  <data name="wordColorError" xml:space="preserve">
+    <value>Cor do ponto da palavra deve ser 'false' ou um código hexadecimal de cor</value>
+  </data>
+  <data name="open" xml:space="preserve">
+    <value>abrir</value>
+  </data>
+  <data name="listError" xml:space="preserve">
+    <value>Selecione uma lista</value>
+  </data>
+  <data name="defaultStroopProgram" xml:space="preserve">
+    <value>padrao 16 1000 true 1000 False padrao_words.lst padrao_color.lst false true false 1 false txt false false 160 false false false false 0 0 false false</value>
+  </data>
+  <data name="arrowDown" xml:space="preserve">
+    <value>setaBaixo</value>
+  </data>
+  <data name="arrowLeft" xml:space="preserve">
+    <value>setaEsquerda</value>
+  </data>
+  <data name="arrowRight" xml:space="preserve">
+    <value>setaDireita</value>
+  </data>
+  <data name="arrowUp" xml:space="preserve">
+    <value>setaCima</value>
+  </data>
+  <data name="spaceBar" xml:space="preserve">
+    <value>barraDeEspaço</value>
+  </data>
+  <data name="deleteProgram" xml:space="preserve">
+    <value>Excluir programa:</value>
+  </data>
+  <data name="programDeleted" xml:space="preserve">
+    <value>foi excluído com sucesso!</value>
+  </data>
+  <data name="programExistsInBackup" xml:space="preserve">
+    <value>O programa já existe na pasta de backup, deseja sobrescrevê-lo?</value>
+  </data>
+  <data name="programNotDeleted" xml:space="preserve">
+    <value>O programa não será excluído!</value>
+  </data>
+  <data name="recoveredSucessful" xml:space="preserve">
+    <value>Todos os programas selecionados foram recuperados com sucesso.</value>
+  </data>
+  <data name="programRecovered" xml:space="preserve">
+    <value>foi recuperado com sucesso!</value>
+  </data>
+  <data name="programNotRecovered" xml:space="preserve">
+    <value>O programa não será recuperado!</value>
+  </data>
+  <data name="conflictsFound" xml:space="preserve">
+    <value>conflito(s) encontrado(s). deseja trata-lo(s) agora?</value>
+  </data>
+  <data name="conflict" xml:space="preserve">
+    <value>Conflito</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>excluir</value>
+  </data>
+  <data name="deletedExperiments" xml:space="preserve">
+    <value>Experimentos excluídos:</value>
+  </data>
+  <data name="deletedPrograms" xml:space="preserve">
+    <value>Arquivos excluídos:</value>
+  </data>
+  <data name="existingExperiments" xml:space="preserve">
+    <value>Experimentos existentes:</value>
+  </data>
+  <data name="existingPrograms" xml:space="preserve">
+    <value>Arquivos existentes:</value>
+  </data>
+  <data name="recover" xml:space="preserve">
+    <value>recuperar</value>
+  </data>
+  <data name="toDeleteExperiments" xml:space="preserve">
+    <value>Experimentos que serão excluídos:</value>
+  </data>
+  <data name="toDeletePrograms" xml:space="preserve">
+    <value>Arquivos que serão excluídos:</value>
+  </data>
+  <data name="toRecoverExperiments" xml:space="preserve">
+    <value>Experimentos que serão restaurados:</value>
+  </data>
+  <data name="toRecoverPrograms" xml:space="preserve">
+    <value>Arquivos que serão restaurados:</value>
+  </data>
+  <data name="warningDelete" xml:space="preserve">
+    <value>Aviso: Itens marcados em vermelho indicam arquivos com o mesmo nome já existentes. Excluir esses arquivos irá sobreescrever os já existentes, não sendo possível recupera-los.</value>
+  </data>
+  <data name="warningRecover" xml:space="preserve">
+    <value>Aviso: Itens marcados em vermelho indicam arquivos com o mesmo nome já existentes. Recuperar esses arquivos irá sobreescrever os já existentes, não sendo possível recupera-los.</value>
+  </data>
+  <data name="deletedSucessful" xml:space="preserve">
+    <value>Todos os programas selecionados foram deletedos com sucesso.</value>
+  </data>
+  <data name="expoTypeError" xml:space="preserve">
+    <value>O tipo de exposição deve ser selecionado.</value>
+  </data>
+  <data name="savePending" xml:space="preserve">
+    <value>Pode haver mudanças não-salvas no programa que está sendo editado. deseja grava-las?</value>
+  </data>
+  <data name="savePendingTitle" xml:space="preserve">
+    <value>Alterações não-salvas</value>
+  </data>
+  <data name="unsavedLists" xml:space="preserve">
+    <value>Pode haver mudanças não-salvas na lista que está sendo editada. deseja grava-las?</value>
+  </data>
+  <data name="unsavedListsTitle" xml:space="preserve">
+    <value>Listas não-salvas</value>
+  </data>
+  <data name="exportSuccess" xml:space="preserve">
+    <value>Arquivos exportados com sucesso</value>
+  </data>
+  <data name="experimentConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome do experimento&lt;/td&gt;
+            &lt;td&gt;Deve ser preenchido com o nome do experimento que será criado. O nome deve conter apenas caracteres alfanuméricos e não deve possuir espaço. Esse mesmo nome será utilizado na hora de escolher o experimento que será execultado, na página de resultados e importação/exportação&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Exposição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Ordem aleatória
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se a exposição dos programas será feita de forma aleatória em relação a ordem que o usuário adicionou. Caso a opção esteja selecionada o usuário pode selecionar um Treino.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Tempo &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Intervalo(ms)&lt;/td&gt;
+            &lt;td&gt;Indica o intervalo entre um programa e outro durante o experimento&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Programas &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Adicionar&lt;/td&gt;
+            &lt;td&gt;Adiciona um programa à lista de programas do experimento.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Treino&lt;/td&gt;
+            &lt;td&gt;Na ordem aleatória o programa de treino sempre será o primeiro teste que será realizado.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Apagar&lt;/td&gt;
+            &lt;td&gt;Remove o programa selecionado programa da lista de programas do experimento.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Outros  &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Instruções &lt;/td&gt;
+            &lt;td&gt;Descreve as orientações para o participante sobre a execução do teste. Cada linha informada será apresentada em uma tela durante 4 segundos.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="fileManagmentConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos existentes/Arquivos excluídos&lt;/td&gt;
+            &lt;td&gt;Essa lista indica os arquivos que existem e &lt;u&gt;podem&lt;/u&gt; ser excluídos ou os arquivos que foram excluídos e &lt;u&gt;podem&lt;/u&gt; ser recuperados&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos que serão restaurados/excluídos&lt;/td&gt;
+            &lt;td&gt;Essa lista indica os arquivos que existem e &lt;u&gt;serão&lt;/u&gt; excluídos ou os arquivos que foram excluídos e &lt;u&gt;serão&lt;/u&gt; recuperados&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td style = "color: red"&gt;Arquivos em vermelho&lt;/td&gt;
+            &lt;td&gt;Os arquivos indicados em vermelho pela lista indica que já possuí um programa ou experimento com o mesmo nome na pasta de origem e restaurar/excluir esse arquivo resultará na perca do arquivo com o mesmo nome existente na pasta de destino&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="TRConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome do programa&lt;/td&gt;
+            &lt;td&gt;Deve ser preenchido com o nome do programa que será criado. O nome deve conter apenas caracteres alfanuméricos e não deve possuir espaço. Esse mesmo nome será utilizado na hora de escolher o programa que será execultado, na página de resultados e importação/exportação&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Exposição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo de estimulo&lt;/td&gt;
+            &lt;td&gt;
+               Nesse campo deve ser escolhido um dos tipos de estimulo disponíveis, são eles:&lt;br&gt;
+               &lt;ul&gt;
+                  &lt;li&gt;Formas: Nesse modo deve ser escolhido uma ou mais forma geometrica presente no campo "Formas", e essas formas serão renderizadas aleatoriamente durante a exposição. Além da(s) forma(s) geométrica(s) deve ser escolhida uma cor/uma lista de cores que definirá a(s) cor(es) da forma geométrica.&lt;/li&gt;
+                  &lt;li&gt;Palavra: Nesse modo deve ser escolhido uma lista de palavras e uma lista de cores ou uma única cor para a palavra, e a partir disso o programa realizará a exposição de palavras coloridas&lt;/li&gt;
+                  &lt;li&gt;Imagem: Nesse tipo deve ser escolhido uma lista de imagens e a partir disso o programa realizará a exposição das imagens contidas na lista.&lt;/li&gt;
+                  &lt;li&gt;Imagem e palavra: Nesse tipo deve ser escolhido uma lista de imagens e uma de palavras. O programa gerado exibirá alternadamente um item de cada lista por vez.&lt;/li&gt;
+                  &lt;li&gt;Palavra com áudio: Nesse tipo deve ser selecionado uma lista de palavras e outra de áudio que serão reproduzidos pelo programa na exposição de palavras coloridas com exposição de áudio.&lt;/li&gt;
+                  &lt;li&gt;Imagem com áudio: Nesse tipo deve ser selecionado uma lista de imagens e outra de áudio que serão reproduzidos pelo programa. A exposição &lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Tamanho do estimulo
+            &lt;/td&gt;
+            &lt;td&gt;
+               O tamanho do estimulo possuí funções diferentes dependendo do estimulo a que ele se aplica.
+               &lt;ul&gt;
+                  &lt;li&gt;Formas: Nesse tipo de estimulo o tamanho equivale ao tamanho da forma, em pixels, que será renderizado&lt;/li&gt;
+                  &lt;li&gt;Imagem: Nesse tipo de estimulo o tamanho equivale ao tamanho do lado, em pixels, da imagem que será renderizada.&lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Tamanho da fonte
+            &lt;/td&gt;
+            &lt;td&gt;
+               O tamanho, em pontos, da fonte que será utilizada nas palavras.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Distância do estimulo ao centro da tela&lt;/td&gt;
+            &lt;td&gt;Indica, em pixels a distância que o estímulo será renderizado tomando como referencia o centro da tela.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Quantidade de possíveis posições&lt;/td&gt;
+            &lt;td&gt;
+               Indica a quantidade de posições possiveis para o estimulo e são elas:
+               &lt;ul&gt;
+                  &lt;li&gt;1: Nessa opção todos os estímulos aparecerão no centro da tela.&lt;/li&gt;
+                  &lt;li&gt;2: Nessa opção os estímulos podem aparecer na direita da tela ou na esquerda.&lt;/li&gt;
+                  &lt;li&gt;4: Nessa opção os estímulos podem aparecer nas posições: abaixo do centro, acima do centro, à direita do centro ou à esquerda do centro.&lt;/li&gt;
+                  &lt;li&gt;8: Nessa opção os estímulos podem aparecer nas posições: abaixo do centro, acima do centro, à direita do centro, à esquerda do centro ou em qualquer uma das diagonais.&lt;/li&gt;
+               &lt;/ul&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Número de tentativas&lt;/td&gt;
+            &lt;td&gt;Define a quantidade de tentativas do úsuario. O número de tentativas equivale ao número de estimulos que serão mostrados.&lt;br&gt;Quando o número de itens nas listas é menor que o número de tentativas, será utilizada a quantidade de itens das listas repetindo os itens o necessário para atingir o número de tentativas. Da mesma forma, quando o número de itens nas listas é maior que o número de tentativas, será utilizada a quantidade de itens das listas correspondente ao número de tentativas. &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Ordem aleatória
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se a exposição dos estímulos será feita de forma aleatória em relação a ordem da lista.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Utilizar beep
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se será reproduzido um beep juntamente com a renderização do estimulo.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Beep aleatório
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se o beep será aleatório. Caso seja aleatório ele será reproduzido apenas em algumas renderizações, caso não seja aleatório ele será reproduzido em todos os estimulos.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Duração do beep(ms)
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica por quantos milisegundos o beep será reproduzido
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+		Tipo de cor do estímulo
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica se o estílo deve ter uma única cor durante todo o programa (Cor única) ou se serão várias cores diferentes. No caso de várias cores diferentes essas cores devem estar dentro de uma lista de cores.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Cor do estimulo
+            &lt;/td&gt;
+            &lt;td&gt;
+               Indica a cor do estimulo.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Listas &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Palavras
+            &lt;/td&gt;
+            &lt;td&gt;
+               Carrega a lista de palavras que serão apresentadas para os tipos "Palavra", "Palavra e Imagem" e "Palavra com Áudio". A exposição não aleatória seguirá a ordem das palavras na lista.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cores&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de cores das palavras que serão apresentadas para os tipos "Formas", "Palavra", "Palavra e Imagem" e "Palavra com Áudio". A exposição não aleatória seguirá a ordem das cores na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Imagens&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de imagens que serão apresentadas para os tipos "Imagem", "Imagem com Áudio" e "Palavra e Imagem". A exposição não aleatória seguirá a ordem das imagens na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Áudios&lt;/td&gt;
+            &lt;td&gt;Carrega a lista de áudios que serão reproduzidos no teste para os tipos "Palavra com Áudio" e "Imagem com Áudio". A exposição não aleatória seguirá a ordem dos áudios na lista.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Tempo &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;
+               Exposição(ms)
+            &lt;/td&gt;
+            &lt;td&gt;
+               Define a duração em milissegundos da exposição do estímulo escolhido, palavra ou imagem.
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Intervalo(ms)&lt;/td&gt;
+            &lt;td&gt;Define o tempo em milissegundos entre as tentativas.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tempo Intervalo Variável &lt;/td&gt;
+            &lt;td&gt;Indica que o intervalo terá a duração variada aleatoriamente a partir de 400ms até o tempo de intervalo informado.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Formas&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Formas&lt;/td&gt;
+            &lt;td&gt;Indica quais formas geométricas serão utilizadas no programa do tipo "formas"&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Ponto de fixação &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo&lt;/td&gt;
+            &lt;td&gt;Indica a forma do ponto de fixação: + ou ・&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor do ponto&lt;/td&gt;
+            &lt;td&gt;Indica a cor do ponto de fixação.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Resposta do usuário&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Resposta do usuário&lt;/td&gt;
+            &lt;td&gt;Indica quais serão as teclas que o usuário pressionará para responder aos estimulos.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Outros  &lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor de Fundo &lt;/td&gt;
+            &lt;td&gt;Define a cor tela por trás do estímulo durante a apresentação. O padrão é tela branca.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Instruções &lt;/td&gt;
+            &lt;td&gt;Descreve as orientações para o participante sobre a execução do teste. Cada linha informada será apresentada em uma tela durante 4 segundos.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="TRResultsInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;a
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exportar como .cvs&lt;/td&gt;
+            &lt;td&gt;Exporta os resultados para um arquivo com valores separados por vigula, que podem ser abertos por programas editores de planilhas (ex: libre office).&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Resultados&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;programa&lt;/td&gt;
+            &lt;td&gt;Indica o nome do programa que estava sendo executado no momento do estimulo.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Participante&lt;/td&gt;
+            &lt;td&gt;Indica o nome do participante&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Indica a data em que o programa foi executado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Horario inicial&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que o usuário iniciou o teste&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Horario Exposição&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que a exposição ocorreu&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;TR(ms)&lt;/td&gt;
+            &lt;td&gt;Indica o tempo de reação do usuário ao estimulo mostrado, podendo ser negativo em caso de antecipação da resposta, zero se não houve reação ao estimulo ou positivo se houve reação a tempo.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Intervalo(ms)&lt;/td&gt;
+            &lt;td&gt;Tempo decorrido entre o estímulo mostrado e o próximo, podendo ser aleatório ou não de acordo com a configuração do programa, exceto em caso de antecipação da resposta do usuário ao estímulo ou caso não haver reação ao estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Intervalo estimado(ms)&lt;/td&gt;
+            &lt;td&gt;Tempo decorrido entre o estímulo mostrado e o próximo, podendo ser aleatório ou não de acordo com a configuração do programa&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exposição tempo(ms)&lt;/td&gt;
+            &lt;td&gt;Momento em que o estímulo foi mostrado tendo como referência o inicio da excecução do programa.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exposição(ms)&lt;/td&gt;
+            &lt;td&gt;Indica por quanto tempo a exposição apareceu (caso haja resposta do usuário o tempo total de exposição é equivalente ao tempo de reação)&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Sequência&lt;/td&gt;
+            &lt;td&gt;Indica a ordem cronológica em que os estímulos apareceram para o usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Pos&lt;/td&gt;
+            &lt;td&gt;Indica em qual posição o estimulo foi renderizado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Resposta usuario&lt;/td&gt;
+            &lt;td&gt;Indica qual a tecla que foi pressionada pelo usuário para responder ao estimulo&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo estimulo&lt;/td&gt;
+            &lt;td&gt;Indica qual tipo de estimulo foi exibido ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Estimulo&lt;/td&gt;
+            &lt;td&gt;Indica o nome do estimulo que foi exibido ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Cor do estimulo&lt;/td&gt;
+            &lt;td&gt;Indica a cor que o estimulo apareceu ao usuário&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Beep&lt;/td&gt;
+            &lt;td&gt;Indica se houve ou não o beep ao renderizar o estimulo&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="experimentResultInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exportar como .cvs&lt;/td&gt;
+            &lt;td&gt;Exporta os resultados para um arquivo com valores separados por vigula, que podem ser abertis por programas editores de planilhas (ex: libre office).&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Resultados&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;experimento&lt;/td&gt;
+            &lt;td&gt;Indica o nome do experimento que foi executado.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Programa&lt;/td&gt;
+            &lt;td&gt;Indica o nome do programa que foi executado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Usuário&lt;/td&gt;
+            &lt;td&gt;Indica o nome do usuário que realizou o teste&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Data&lt;/td&gt;
+            &lt;td&gt;Indica a data em que o teste foi realizado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Horario inicial&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que o usuário iniciou o &lt;u&gt;experimento&lt;/u&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Horario teste&lt;/td&gt;
+            &lt;td&gt;Indica o exato momento em que o usuário iniciou o &lt;u&gt;programa&lt;/u&gt;&lt;/td&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Sequência&lt;/td&gt;
+            &lt;td&gt;Indica a sequência cronológica em que o programa foi executado&lt;/td&gt;
+       	 &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="deleteList" xml:space="preserve">
+    <value>Você tem certeza que deseja excluir todas as listas selecionadas?</value>
+  </data>
+  <data name="listsDeleted" xml:space="preserve">
+    <value>Todas as listas selecionadas foram excluídas com sucesso!</value>
+  </data>
+  <data name="listDeleteInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Listas existentes&lt;/td&gt;
+	    &lt;td&gt;Indica as listas existentes e os arquivos pertencentes a ela.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos que serão excluídos&lt;/td&gt;
+            &lt;td&gt;Indica o nome da lista que será excluída e os arquivos pertencentes a ela que também serão excluídos.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="importSuccess" xml:space="preserve">
+    <value>Os arquivos foram importados com sucesso.</value>
+  </data>
+  <data name="agreeConditions" xml:space="preserve">
+    <value>Você tem que concordar com as condições para continuar.</value>
+  </data>
+  <data name="fieldNotFilled" xml:space="preserve">
+    <value>Este campo não pode ser deixado em branco</value>
+  </data>
+  <data name="exportInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos existentes&lt;/td&gt;
+            &lt;td&gt;Essa lista mostra todos os programas, experimentos e listas que &lt;u&gt;podem ser exportados&lt;/u&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos sendo exportados&lt;/td&gt;
+            &lt;td&gt;Essa lista indica quais arquivos existem e&lt;u&gt; serão exportados&lt;/u&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Exportar&lt;/td&gt;
+            &lt;td&gt;Salva todos os arquivos selecionados em um arquivo zip, tornando possível a importação em qualquer computador&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="importInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivo&lt;/td&gt;
+            &lt;td&gt;Seleciona o arquivo zip contendo todas as listas, programas ou experimentos que serão importados&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Importar todos os arquivos&lt;/td&gt;
+            &lt;td&gt;Marque essa opção se deseja importar todos os arquivos do arquivo zip&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos existentes&lt;/td&gt;
+            &lt;td&gt;Esse campo mostra todos os programas, listas ou experimentos que&lt;u&gt;podem ser importados&lt;/u&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Arquivos que serão importados&lt;/td&gt;
+            &lt;td&gt;Essa lista indica quais arquvos&lt;u&gt; serão importados&lt;/u&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Importar&lt;/td&gt;
+            &lt;td&gt;Salva todos os arquivos selecionados, tornando possível sua utilização.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="createNewList" xml:space="preserve">
+    <value>Criar nova lista</value>
+  </data>
+  <data name="inFormListWarning" xml:space="preserve">
+    <value>Você será redirecionado de volta para a edição do programa após a criação da lista.</value>
+  </data>
+  <data name="audioRecordFailed" xml:space="preserve">
+    <value>O arquivo foi gerado porém nenhum áudio foi capturado.</value>
+  </data>
+  <data name="deleteFiles" xml:space="preserve">
+    <value>Você tem certeza que deseja mover todos os arquivos selecionados?</value>
+  </data>
+  <data name="FilesNotDeleted" xml:space="preserve">
+    <value>Nenhuma arquivo foi movido.</value>
+  </data>
+  <data name="listsNotDeleted" xml:space="preserve">
+    <value>Nenhuma lista foi excluída.</value>
+  </data>
+  <data name="listNotAlphanumeric" xml:space="preserve">
+    <value>Nome da lista deve ser composto apenas de caracteres alfanuméricos e sem espaços. Exemplo: 'MinhaLista'</value>
+  </data>
+  <data name="random" xml:space="preserve">
+    <value>Aleatório</value>
+  </data>
+  <data name="training" xml:space="preserve">
+    <value>Treino</value>
+  </data>
+  <data name="removeProgramFromExperiment" xml:space="preserve">
+    <value>Deseja remover o programa do experimento?</value>
+  </data>
+  <data name="audioDeviceNotAvailable" xml:space="preserve">
+    <value>Não existe nenhum dispositivo disponível para gravação de aúdio.</value>
+  </data>
+  <data name="MatchConfigInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Geral&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Nome do programa&lt;/td&gt;
+            &lt;td&gt;Deve ser preenchido com o nome do programa que será criado. O nome deve conter apenas caracteres alfanuméricos e não deve possuir espaço. Esse mesmo nome será utilizado na hora de escolher o programa que será execultado, na página de resultados e importação/exportação&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Exposição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;Tipo de exposição&lt;/td&gt;
+            &lt;td&gt;
+                O teste de escolha funciona do seguinte modo: Será exibido um modelo, e logo em seguida diversos estimulos, o modelo sempre aparecerá como estimulo.&lt;br&gt;
+                O modo em que o participante deverá reagir ao estimulo depende do tipo de exposição, são eles:&lt;br&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;DMTS: O participante deve escolher o estimulo que seja igual ao modelo mostrado.&lt;/li&gt;
+                  &lt;li&gt;DNMTS: O participante NÃO deve escolher o estimlo que seja igual ao modelo mostrado.&lt;/li&gt;
+                  &lt;li&gt;DMTS/DNMTS: O participante será exposto, alternadamente, ao DMTS e ao DNMTS, devendo realizar a escolha adequada ao tipo de exposição que será exibido.&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tipo de estimulo&lt;/td&gt;
+            &lt;td&gt;Define o tipo de estimulo que será exibido, sendo as alternativas:&lt;br&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Imagem: Deverá ser escolhida uma lista de imagens que serão mostrados como estimulo&lt;/li&gt;
+                &lt;li&gt;Palavra: Deverá ser escolhida uma lista de palavras e uma cor fixa para que elas sejam exibidas&lt;/li&gt;
+                &lt;li&gt;Palavra e Cor: Deverá ser escolhida duas listas, sendo elas uma de palavra e uma de cores para que cada palavra apareça com uma cor da lista&lt;/li&gt;
+            &lt;/ul&gt;
+            Observações:&lt;br&gt; 
+            &lt;ul&gt;
+                &lt;li&gt;O número de elementos da lista de palavras ou de imagens deverá ser sempre maior do que o número de estimulos.&lt;/li&gt;
+                &lt;li&gt;O número de elementos da lista deve ser, preferencialmente, maior do que o numero total de estimulos que será mostrado.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Número de estimulos&lt;/td&gt;
+            &lt;td&gt;Define quantos estimulos aparecerão após o modelo para que o participante escolha um deles.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Número de tentativas&lt;/td&gt;
+            &lt;td&gt;Define o número de tentativas que o usuário terá.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Tamanho da exposição&lt;/td&gt;
+            &lt;td&gt;Define o tamanho de estimulo e seu significado varia para cada tipo de estimulo principal:&lt;br&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Para lista de imagens: O tamanho do estimulo define, em pixels, o tamanho do quadrado que exibirá a imagem.&lt;/li&gt;
+                &lt;li&gt;Para lista de palavras: O tamanho do estimulo define, em pixels, o tamanho da fonte que a palavra será renderizada. &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Posição aleatória&lt;/td&gt;
+            &lt;td&gt;Define se serão utilizadas as posições pre-definidas ou posições aleatórias.&lt;br&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Estimulos: Os estimulos aparecerão em posições aleatórias, porém nunca irão se sobrepor.&lt;/li&gt;
+                &lt;li&gt;Modelo: O modelo aparecerá em uma posição aleatória.&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ordem aleatória&lt;/td&gt;
+            &lt;td&gt;Define se a ordem de aparição das exposições seguirá a ordem a lista ou se eles serão reordenados no inicio de cada execução do programa.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Finalizar esposição do modelo com clique&lt;/td&gt;
+            &lt;td&gt;Define se o modelo desaparecerá caso o participante clique nele.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Listas&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;        
+         &lt;tr&gt;
+            &lt;td&gt;Palavras&lt;/td&gt;
+            &lt;td&gt;Define a lista de palavras que será utilizada na exposição de palavras ou palavras e cores.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Cores&lt;/td&gt;
+            &lt;td&gt;Define a lista de cores que será utilizada na exposição de palavras e cores.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Imagens&lt;/td&gt;
+            &lt;td&gt;Define a lista de imagens que será utilizada na exposição de imagens.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Áudios&lt;/td&gt;
+            &lt;td&gt;Ainda não há uso para esse tipo de lista no teste de escolha.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Tempo&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;        
+         &lt;tr&gt;
+             &lt;td&gt;Exposição do modelo(ms)&lt;/td&gt;
+             &lt;td&gt;Define, em ms, o tempo em que o modelo ficará exposto.&lt;/td&gt;
+         &lt;/tr&gt;     
+         &lt;tr&gt;
+             &lt;td&gt;Exposição dos estimulos(ms)&lt;/td&gt;
+             &lt;td&gt;Define, em ms, o tempo em que os estimulos ficarão expostos.&lt;/td&gt;
+         &lt;/tr&gt;     
+         &lt;tr&gt;
+             &lt;td&gt;Atraso entre modelo e estimulo(ms)&lt;/td&gt;
+             &lt;td&gt;Define, em ms, o tempo de intervalo entre o modelo e os estimulos.&lt;/td&gt;
+         &lt;/tr&gt;     
+         &lt;tr&gt;
+             &lt;td&gt;Atraso entre tentativas(ms)&lt;/td&gt;
+             &lt;td&gt;Define, em ms, o tempo de intervalo entre os estimulos e o modelo da próxima exposição.&lt;/td&gt;
+         &lt;/tr&gt;     
+         &lt;tr&gt;
+            &lt;td&gt;Atraso entre modelo e estimulo variável&lt;/td&gt;
+            &lt;td&gt;Define se o intervalo entre o modelo e os estimulos será aleatório.&lt;br&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Caso essa opção esteja marcada, o atraso será aleatório, porém nunca maior do que o atraso entre o modelo e os estimulos.&lt;/li&gt;
+                &lt;li&gt;O atraso entre modelo e estimulos deve ser maior ou igual 400ms.&lt;/li&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;   
+        &lt;tr&gt;
+            &lt;td&gt;Atraso entre tentativas variável&lt;/td&gt;
+            &lt;td&gt;Define se o intervalo entre as tentativas será aleatório.&lt;br&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Caso essa opção esteja marcada, o atraso será aleatório, porém nunca maior do que o atraso entre tentativas.&lt;/li&gt;
+                &lt;li&gt;O atraso entre tentativas deve ser maior ou igual 400ms.&lt;/li&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;   
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Cores&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;   
+         &lt;tr&gt;
+              &lt;td&gt;Fundo do DMTS&lt;/td&gt;
+              &lt;td&gt;Define o fundo da exposição DMTS
+                  &lt;li&gt;Caso o tipo de exposição seja DMTS/DNMTS o que indicará o tipo de exposição atual é a cor de fundo.&lt;/li&gt;
+              &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+              &lt;td&gt;Fundo do DNMTS&lt;/td&gt;
+              &lt;td&gt;Define o fundo da exposição DNMTS
+                &lt;li&gt;Caso o tipo de exposição seja DMTS/DNMTS o que indicará o tipo de exposição atual é a cor de fundo.&lt;/li&gt;
+            &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+              &lt;td&gt;Palavras&lt;/td&gt;
+              &lt;td&gt;No tipo de exposição 'palavras', essa será a cor em que todas as palavras da lista serão renderizadas.&lt;/td&gt;
+         &lt;/tr&gt;   
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Sinalização auditiva&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Opção&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Descrição&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Exposição&lt;/td&gt;
+             &lt;td&gt;Define se haverá sinalização auditiva indicando quando um estimulo ou modelo é renderizado&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Acerto / Erro&lt;/td&gt;
+             &lt;td&gt;Define se haverá sinalização auditiva indicando quando o usuário aceta ou erra a escolha do estimulo de acordo com o tipo de exposição.&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Comissão&lt;/td&gt;
+             &lt;td&gt;Define se haverá sinalização auditiva de erro quando o usuário clicar no modelo e a opção 'Finalizar exposição do modelo com clique' estiver desativada. &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td&gt;Omissão&lt;/td&gt;
+             &lt;td&gt;Define se haverá sinalização auditiva de erro quando o usuário não realizar uma escolha de estimulo ou clicar no modelo no intervalo definido pelo tempo de exposição do modelo ou tempo de exposição do estimulo&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Instrução&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+             &lt;td colspan = "2"&gt;Define o texto que será exibido no inicio do teste. Cada linha desse campo aparecerá separadamente na execução do programa.&lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="posNumberNotImplemented" xml:space="preserve">
+    <value>Número de posições ainda não disponível.</value>
+  </data>
+  <data name="dispositionError" xml:space="preserve">
+    <value>Disposição A-B deve ser selecionada.</value>
+  </data>
+  <data name="audioListError" xml:space="preserve">
+    <value>Selecione uma lista de audios</value>
+  </data>
+  <data name="colorListError" xml:space="preserve">
+    <value>Selecione uma lista de cores</value>
+  </data>
+  <data name="imgListError" xml:space="preserve">
+    <value>Selecione uma lista de imagens</value>
+  </data>
+  <data name="matchingTestHeader" xml:space="preserve">
+    <value>Programa\t#\tParticipante\tData\tHorario Inicial\tTempo de Exposição\tReação do modelo(ms)\tReação do estimulo(ms)\tIntervalo das tentativas(ms)\tIntervalo(ms)\tExposição do modelo(ms)\tExposição do estímulo(ms)\tSenquencia\tTipo de Teste\tTipo de estimulo\tLista\tPrimeira posição do modelo\tModelo\tCor do modelo\tEstimulo 2\tEstimulo 3\tEstimulo 4\tEstimulo 5\tEstimulo 6\tEstimulo 7\tEstimulo 8\tSegunda posição do modelo\tNome do estimulo clicado\tCor do estimulo clicado\tPosição do estimulo clicado\tIgual</value>
+  </data>
+  <data name="CannotBeEmpty" xml:space="preserve">
+    <value>Esse campo deve ser preenchido</value>
+  </data>
+  <data name="matchingTest" xml:space="preserve">
+    <value>Teste de escolha</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>Modelo</value>
+  </data>
+  <data name="stimulu" xml:space="preserve">
+    <value>Estimulo</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Imagem</value>
+  </data>
+  <data name="imageAndWord" xml:space="preserve">
+    <value>Imagem e Palavra</value>
+  </data>
+  <data name="imageWithAudio" xml:space="preserve">
+    <value>Imagem com Aúdio</value>
+  </data>
+  <data name="shape" xml:space="preserve">
+    <value>Forma</value>
+  </data>
+  <data name="word" xml:space="preserve">
+    <value>Palavra</value>
+  </data>
+  <data name="wordWithAudio" xml:space="preserve">
+    <value>Palavra com Aúdio</value>
+  </data>
+  <data name="recoverList" xml:space="preserve">
+    <value>Você tem certeza que deseja recuperar todas as listas selecionadas?</value>
+  </data>
+  <data name="listsNotRecovered" xml:space="preserve">
+    <value>Nenhuma lista foi recuperada.</value>
+  </data>
+  <data name="listsRecovered" xml:space="preserve">
+    <value>Todas as listas selecionadas foram recuperadas com sucesso!</value>
+  </data>
+  <data name="impossibleUseListWarn" xml:space="preserve">
+    <value>A lista é menor que o número de estimulos. Diminua o numero de estimulos ou escolha uma lista maior</value>
+  </data>
+  <data name="smallImageList" xml:space="preserve">
+    <value>A lista é menor do que o necessário para não haver repetições</value>
+  </data>
+  <data name="wordListError" xml:space="preserve">
+    <value>escolha uma lista de palavras.</value>
+  </data>
+  <data name="cantBeFoundPleaseRocoverFirst" xml:space="preserve">
+    <value>é um programa do experimento que não existe na pasta de seus programas. Recupere-o primeiro ou crie um novo programa com o mesmo nome. (Experimento:</value>
+  </data>
+  <data name="cannotRecoverFilesByMotive" xml:space="preserve">
+    <value>Você deve criar ou recuperar as seguintes listas antes de recuperar o programa "</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Erro:</value>
+  </data>
+  <data name="hasMissingLists" xml:space="preserve">
+    <value> possui listas que foram excluídas incorretamente: "</value>
+  </data>
+  <data name="missingListSolution" xml:space="preserve">
+    <value>. Você deve criar a lista manualmente ou excluir o programa. Deseja excluir o programa?</value>
+  </data>
+  <data name="wanstPossibleToRecoverLists" xml:space="preserve">
+    <value>Não foi possível exibir as listas pois o programa </value>
+  </data>
+  <data name="cantEdìtProgramMissingFiles" xml:space="preserve">
+    <value>Não foi possível abrir a edição de programa pois está faltando arquivos. Recupere ou crie essas listas antes de continuar: </value>
+  </data>
+  <data name="wordWithColor" xml:space="preserve">
+    <value>Palavra com Cor</value>
+  </data>
+  <data name="matchingResultsInstructions" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;style&gt;
+         table {
+         width:100%;
+         }
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         }
+         th, td {
+         padding: 5px;
+         text-align: justify;  
+         }
+         table#t01 tr:nth-child(even) {
+         background-color: #eee;
+         }
+         table#t01 tr:nth-child(odd) {
+         background-color:#fff;
+         }
+         .subBar {
+         background-color: gray;
+         color: black;
+         }
+         .mainBar{
+         background-color: black;
+         color: white;
+         text-align: center;
+         }
+         li{
+         padding-bottom:5px;
+         }
+      &lt;/style&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;table id="t01" style = "margin: 0 auto; padding: 0"&gt;
+         &lt;tr&gt;
+            &lt;td colspan = "2" style = "background: #fff"&gt; &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;th class = "mainBar" colspan = "2"&gt;General&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Option&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Description&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+                &lt;td&gt; Exportar como .cvs &lt;/td&gt;
+                &lt;td&gt; Exporta os resultados para um arquivo com valores separados por vírgula, que podem ser abertos por programas editores de planilhas (ex: libre office). &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "mainBar" colspan = "2"&gt;Results&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;th class = "subBar" style = "width: 30%" &gt;Option&lt;/th&gt;
+            &lt;th class = "subBar"&gt;Description&lt;/th&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Programa &lt;/td&gt; &lt;td&gt; O nome do programa &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Participante &lt;/td&gt; &lt;td&gt; O nome do participante &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Data &lt;/td&gt; &lt;td&gt; Data em que o programa foi executado &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Hora Inicial &lt;/td&gt; &lt;td&gt; Hora em que o programa foi executado &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;t&gt; &lt;td&gt; Tempo de exposição &lt;/td&gt; &lt;td&gt; Tempo em que a exposição foi processada &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Tempo de Reação do Modelo &lt;/td&gt; &lt;td&gt; Tempo que o participante leva para responder ao modelo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Tempo de Reação do estimulo (ms) &lt;/td&gt; &lt;td&gt; Tempo que o participante leva para responder ao estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Intervalo entre as tentativas (ms) &lt;/td&gt; &lt;td&gt; Tempo decorrido desde a última tentativa &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Intervalo (ms) &lt;/td&gt; &lt;td&gt; Intervalo entre o modelo e a exposição de estímulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Exposição do modelo (ms) &lt;/td&gt; &lt;td&gt; Tempo em que o modelo ficou na tela &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; estimulo Exposition (ms) &lt;/td&gt; &lt;td&gt; Tempo que o estimulo ficou na tela &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Senecência &lt;/td&gt; &lt;td&gt; Ordem cronológica que o estímulo veio para o participante &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Tipo de teste &lt;/td&gt; &lt;td&gt; Tipo de teste de exposição &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Tipo de estímulo &lt;/td&gt; &lt;td&gt; Tipo de exposição estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; List &lt;/td&gt; &lt;td&gt; Listas que foram usadas no programa &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Primeira posição do modelo &lt;/td&gt; &lt;td&gt; Onde o modelo apareceu &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Modelo &lt;/td&gt; &lt;td&gt; Nome do modelo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Cor do modelo &lt;/td&gt; &lt;td&gt; Cor do modelo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 2º estimulo &lt;/td&gt; &lt;td&gt; Nome do 2º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 3º estimulo &lt;/td&gt; &lt;td&gt; Nome do 3º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 4º estimulo &lt;/td&gt; &lt;td&gt; Nome do 4º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 5º Stumulu &lt;/td&gt; &lt;td&gt; Nome do 5º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 6º estimulo &lt;/td&gt; &lt;td&gt; Nome do 6º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 7º estimulo &lt;/td&gt; &lt;td&gt; Nome do 7º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; 8º estimulo &lt;/td&gt; &lt;td&gt; Nome do 8º estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Segunda posição do modelo &lt;/td&gt; &lt;td&gt; Onde o modelo apareceu como estimulo &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; estimulo clicado &lt;/td&gt; &lt;td&gt; Nome do estimulo em que o participante clicou &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Cor de estimulo clicado &lt;/td&gt; &lt;td&gt; Cor do estimulo em que o participante clicou &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Posição de estimulo clicado &lt;/td&gt; &lt;td&gt; Posição do estimulo em que o participante clicou &lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt; &lt;td&gt; Match &lt;/td&gt; &lt;td&gt; Usuário clicou o estimulo igual ao modelo &lt;/td&gt;
+         &lt;/tr&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="expandImageInvalid" xml:space="preserve">
+    <value>A expansão da imagem só pode ter uma posição, central.</value>
+  </data>
+  <data name="clickedStimuluPosition" xml:space="preserve">
+    <value>Posição do estimulo clicado</value>
+  </data>
+  <data name="modelFirstPosition" xml:space="preserve">
+    <value>Primeira posição do modelo</value>
+  </data>
+  <data name="modelSecondPosition" xml:space="preserve">
+    <value>Segunda posição do modelo</value>
+  </data>
+  <data name="invalidDate" xml:space="preserve">
+    <value>Deve ser selecionada uma data válida.</value>
+  </data>
+  <data name="invalidSchoolingLevel" xml:space="preserve">
+    <value>Selecione um nível de escolaridade.</value>
+  </data>
+  <data name="invalidSex" xml:space="preserve">
+    <value>Selecione um sexo.</value>
+  </data>
+  <data name="invalidYesNoPanel" xml:space="preserve">
+    <value>Selecione sim ou não.</value>
+  </data>
+  <data name="invalidName" xml:space="preserve">
+    <value>Digite um nome.</value>
+  </data>
+  <data name="participantAlreadyExistsWishOverride" xml:space="preserve">
+    <value>Participante já existe, deseja sobreescrever?</value>
+  </data>
+  <data name="participantNotSaved" xml:space="preserve">
+    <value>Participante não foi salvo.</value>
+  </data>
+  <data name="participantSaveSucessful" xml:space="preserve">
+    <value>Participante salvo com sucesso.</value>
+  </data>
+  <data name="editParticipant" xml:space="preserve">
+    <value>Editar participante:</value>
+  </data>
+  <data name="createNewParticipant" xml:space="preserve">
+    <value>Criar novo participante</value>
+  </data>
+  <data name="shouldCloseOpenedForm" xml:space="preserve">
+    <value>Você deve fechar qualquer formulário aberto antes de continuar</value>
+  </data>
+  <data name="shouldSelectReason" xml:space="preserve">
+    <value>Um motivo válido deve ser selecionado.</value>
+  </data>
+  <data name="alternatingDMTS_DNMTS" xml:space="preserve">
+    <value>DMTS/DNMTS(Alternado)</value>
+  </data>
+  <data name="randomDMTS_DNMTS" xml:space="preserve">
+    <value>DMTS/DNMTS(Aleatorio)</value>
+  </data>
+</root>

@@ -1,0 +1,29 @@
+﻿version: 1.0.{build}
+branches:
+  only:
+  - master
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: xlR3CnYajEuet3ZdyDZpxYHT/+rvug8RjGT9mHzEv3foysoATeaa7nevl12gDoed
+nuget:
+  project_feed: true
+before_build:
+- cmd: nuget restore
+build:
+  project: TestPlatform.sln
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
+
+after_test:
+- ps:
+
+.\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe
+–register:user
+-target:"C:\projects\$env:Test-Platform\packages\xunit.runner.console.\n.2.3.1\tools\xunit.console.exe" "-targetargs:StroopUnitTestProject\bin\$env:CONFIGURATION\:StroopUnitTestProject.dll\n–appveyor –noshadow"
+–output:opencoverCoverage.xml
+
+$coveralls = (Resolve-Path\n"packages/coveralls.net.*/tools/csmacnz.coveralls.exe").ToString()
+
+& $coveralls —opencover –i opencoverCoverage.xml —repoToken\n$env:COVERALLS_REPO_TOKEN —commitId\n$env:APPVEYOR_REPO_COMMIT —commitBranch\n$env:APPVEYOR_REPO_BRANCH —commitAuthor\n$env:APPVEYOR_REPO_COMMIT_AUTHOR —commitEmail $env:APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL\n—commitMessage $env:APPVEYOR_REPO_COMMIT_MESSAGE\n—jobId $env:APPVEYOR_JOB_ID
