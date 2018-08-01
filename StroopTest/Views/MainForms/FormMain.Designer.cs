@@ -99,6 +99,7 @@
             this.selectButton = new System.Windows.Forms.Button();
             this.executingTypeLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.mainMenuStrip.SuspendLayout();
             this.testToolStrip.SuspendLayout();
             this.markPanel.SuspendLayout();
@@ -631,6 +632,11 @@
             this.tableLayoutPanel2.Controls.Add(this.markPanel, 1, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM5";
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            // 
             // FormMain
             // 
             this.AcceptButton = this.executeButton;
@@ -644,6 +650,7 @@
             this.MainMenuStrip = this.mainMenuStrip;
             this.Name = "FormMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormMain_KeyDown);
             this.mainMenuStrip.ResumeLayout(false);
@@ -738,5 +745,6 @@
         private System.Windows.Forms.RadioButton helpButton;
         private System.Windows.Forms.RadioButton participantButton;
         private System.Windows.Forms.ComboBox participantComboBox;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }

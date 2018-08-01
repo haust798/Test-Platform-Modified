@@ -36,6 +36,7 @@
             this.response_label = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.imgPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,6 +175,7 @@
         private System.Windows.Forms.Label response_label;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

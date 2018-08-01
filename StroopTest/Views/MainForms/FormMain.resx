@@ -606,6 +606,57 @@
   <data name="participantPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
+  <data name="&gt;&gt;participantComboBox.Name" xml:space="preserve">
+    <value>participantComboBox</value>
+  </data>
+  <data name="&gt;&gt;participantComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;participantComboBox.Parent" xml:space="preserve">
+    <value>participantPanel</value>
+  </data>
+  <data name="&gt;&gt;participantComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;participantLabel.Name" xml:space="preserve">
+    <value>participantLabel</value>
+  </data>
+  <data name="&gt;&gt;participantLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;participantLabel.Parent" xml:space="preserve">
+    <value>participantPanel</value>
+  </data>
+  <data name="&gt;&gt;participantLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="participantPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="participantPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 2</value>
+  </data>
+  <data name="participantPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="participantPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 38</value>
+  </data>
+  <data name="participantPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;participantPanel.Name" xml:space="preserve">
+    <value>participantPanel</value>
+  </data>
+  <data name="&gt;&gt;participantPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;participantPanel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;participantPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="participantComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>104, 4</value>
   </data>
@@ -660,33 +711,6 @@
   <data name="&gt;&gt;participantLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="participantPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="participantPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 2</value>
-  </data>
-  <data name="participantPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="participantPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 38</value>
-  </data>
-  <data name="participantPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;participantPanel.Name" xml:space="preserve">
-    <value>participantPanel</value>
-  </data>
-  <data name="&gt;&gt;participantPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;participantPanel.Parent" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;participantPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>499, 17</value>
   </metadata>
@@ -708,141 +732,6 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;participantButton.Name" xml:space="preserve">
-    <value>participantButton</value>
-  </data>
-  <data name="&gt;&gt;participantButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;participantButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;participantButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;helpButton.Name" xml:space="preserve">
-    <value>helpButton</value>
-  </data>
-  <data name="&gt;&gt;helpButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;helpButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;helpButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;buttonMatching.Name" xml:space="preserve">
-    <value>buttonMatching</value>
-  </data>
-  <data name="&gt;&gt;buttonMatching.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonMatching.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonMatching.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;exportButton.Name" xml:space="preserve">
-    <value>exportButton</value>
-  </data>
-  <data name="&gt;&gt;exportButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exportButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;exportButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;importButton.Name" xml:space="preserve">
-    <value>importButton</value>
-  </data>
-  <data name="&gt;&gt;importButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;importButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;importButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;resultButton.Name" xml:space="preserve">
-    <value>resultButton</value>
-  </data>
-  <data name="&gt;&gt;resultButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resultButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;resultButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;experimentButton.Name" xml:space="preserve">
-    <value>experimentButton</value>
-  </data>
-  <data name="&gt;&gt;experimentButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;experimentButton.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;experimentButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;buttonList.Name" xml:space="preserve">
-    <value>buttonList</value>
-  </data>
-  <data name="&gt;&gt;buttonList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonList.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonList.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;buttonReaction.Name" xml:space="preserve">
-    <value>buttonReaction</value>
-  </data>
-  <data name="&gt;&gt;buttonReaction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonReaction.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonReaction.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;buttonStroop.Name" xml:space="preserve">
-    <value>buttonStroop</value>
-  </data>
-  <data name="&gt;&gt;buttonStroop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonStroop.Parent" xml:space="preserve">
-    <value>menuPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonStroop.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="menuPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="menuPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 52</value>
-  </data>
-  <data name="menuPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="menuPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 755</value>
-  </data>
-  <data name="menuPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
   <data name="&gt;&gt;menuPanel.Name" xml:space="preserve">
     <value>menuPanel</value>
   </data>
@@ -854,21 +743,6 @@
   </data>
   <data name="&gt;&gt;menuPanel.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="sideBarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="sideBarPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 52</value>
-  </data>
-  <data name="sideBarPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="sideBarPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 755</value>
-  </data>
-  <data name="sideBarPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
   </data>
   <data name="&gt;&gt;sideBarPanel.Name" xml:space="preserve">
     <value>sideBarPanel</value>
@@ -882,21 +756,6 @@
   <data name="&gt;&gt;sideBarPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="contentPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="contentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 52</value>
-  </data>
-  <data name="contentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="contentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>969, 752</value>
-  </data>
-  <data name="contentPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
   <data name="&gt;&gt;contentPanel.Name" xml:space="preserve">
     <value>contentPanel</value>
   </data>
@@ -908,45 +767,6 @@
   </data>
   <data name="&gt;&gt;contentPanel.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;executingNameLabel.Name" xml:space="preserve">
-    <value>executingNameLabel</value>
-  </data>
-  <data name="&gt;&gt;executingNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;executingNameLabel.Parent" xml:space="preserve">
-    <value>programPanel</value>
-  </data>
-  <data name="&gt;&gt;executingNameLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;selectButton.Name" xml:space="preserve">
-    <value>selectButton</value>
-  </data>
-  <data name="&gt;&gt;selectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;selectButton.Parent" xml:space="preserve">
-    <value>programPanel</value>
-  </data>
-  <data name="&gt;&gt;selectButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="programPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="programPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 7</value>
-  </data>
-  <data name="programPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
-  </data>
-  <data name="programPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>279, 36</value>
-  </data>
-  <data name="programPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
   </data>
   <data name="&gt;&gt;programPanel.Name" xml:space="preserve">
     <value>programPanel</value>
@@ -960,33 +780,6 @@
   <data name="&gt;&gt;programPanel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="executingTypeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="executingTypeLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="executingTypeLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
-  </data>
-  <data name="executingTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 7</value>
-  </data>
-  <data name="executingTypeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 5, 3, 5</value>
-  </data>
-  <data name="executingTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 36</value>
-  </data>
-  <data name="executingTypeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="executingTypeLabel.Text" xml:space="preserve">
-    <value>StroopTest</value>
-  </data>
-  <data name="executingTypeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="&gt;&gt;executingTypeLabel.Name" xml:space="preserve">
     <value>executingTypeLabel</value>
   </data>
@@ -998,27 +791,6 @@
   </data>
   <data name="&gt;&gt;executingTypeLabel.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>498, 4</value>
-  </data>
-  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 2, 3, 2</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>969, 42</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -1033,7 +805,7 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="testToolStrip" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="participantPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="executeButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="markPanel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,24,48347,Percent,15,70248,Percent,11,15702,Percent,48,86364" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="testToolStrip" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="participantPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="executeButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="markPanel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,24.48347,Percent,15.70248,Percent,11.15702,Percent,48.86364" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -5696,11 +5468,164 @@
   <data name="&gt;&gt;errorProvider1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;serialPort1.Name" xml:space="preserve">
+    <value>serialPort1</value>
+  </data>
+  <data name="&gt;&gt;serialPort1.Type" xml:space="preserve">
+    <value>System.IO.Ports.SerialPort, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormMain</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;participantButton.Name" xml:space="preserve">
+    <value>participantButton</value>
+  </data>
+  <data name="&gt;&gt;participantButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;participantButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;participantButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;helpButton.Name" xml:space="preserve">
+    <value>helpButton</value>
+  </data>
+  <data name="&gt;&gt;helpButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;helpButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;helpButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonMatching.Name" xml:space="preserve">
+    <value>buttonMatching</value>
+  </data>
+  <data name="&gt;&gt;buttonMatching.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonMatching.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonMatching.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;exportButton.Name" xml:space="preserve">
+    <value>exportButton</value>
+  </data>
+  <data name="&gt;&gt;exportButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exportButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;exportButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;importButton.Name" xml:space="preserve">
+    <value>importButton</value>
+  </data>
+  <data name="&gt;&gt;importButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;importButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;importButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;resultButton.Name" xml:space="preserve">
+    <value>resultButton</value>
+  </data>
+  <data name="&gt;&gt;resultButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resultButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;resultButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;experimentButton.Name" xml:space="preserve">
+    <value>experimentButton</value>
+  </data>
+  <data name="&gt;&gt;experimentButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;experimentButton.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;experimentButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;buttonList.Name" xml:space="preserve">
+    <value>buttonList</value>
+  </data>
+  <data name="&gt;&gt;buttonList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonList.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonList.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;buttonReaction.Name" xml:space="preserve">
+    <value>buttonReaction</value>
+  </data>
+  <data name="&gt;&gt;buttonReaction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonReaction.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonReaction.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;buttonStroop.Name" xml:space="preserve">
+    <value>buttonStroop</value>
+  </data>
+  <data name="&gt;&gt;buttonStroop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStroop.Parent" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonStroop.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="menuPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="menuPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 52</value>
+  </data>
+  <data name="menuPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="menuPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 755</value>
+  </data>
+  <data name="menuPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;menuPanel.Name" xml:space="preserve">
+    <value>menuPanel</value>
+  </data>
+  <data name="&gt;&gt;menuPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuPanel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;menuPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="participantButton.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -6128,6 +6053,111 @@
   <data name="&gt;&gt;buttonStroop.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="sideBarPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="sideBarPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 52</value>
+  </data>
+  <data name="sideBarPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="sideBarPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 755</value>
+  </data>
+  <data name="sideBarPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;sideBarPanel.Name" xml:space="preserve">
+    <value>sideBarPanel</value>
+  </data>
+  <data name="&gt;&gt;sideBarPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sideBarPanel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;sideBarPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="contentPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="contentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 52</value>
+  </data>
+  <data name="contentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="contentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>969, 752</value>
+  </data>
+  <data name="contentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Name" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;executingNameLabel.Name" xml:space="preserve">
+    <value>executingNameLabel</value>
+  </data>
+  <data name="&gt;&gt;executingNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;executingNameLabel.Parent" xml:space="preserve">
+    <value>programPanel</value>
+  </data>
+  <data name="&gt;&gt;executingNameLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;selectButton.Name" xml:space="preserve">
+    <value>selectButton</value>
+  </data>
+  <data name="&gt;&gt;selectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectButton.Parent" xml:space="preserve">
+    <value>programPanel</value>
+  </data>
+  <data name="&gt;&gt;selectButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="programPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="programPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 7</value>
+  </data>
+  <data name="programPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="programPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>279, 36</value>
+  </data>
+  <data name="programPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;programPanel.Name" xml:space="preserve">
+    <value>programPanel</value>
+  </data>
+  <data name="&gt;&gt;programPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;programPanel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;programPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="executingNameLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
@@ -6206,4 +6236,82 @@
   <data name="&gt;&gt;selectButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="executingTypeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="executingTypeLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="executingTypeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
+  </data>
+  <data name="executingTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="executingTypeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="executingTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 36</value>
+  </data>
+  <data name="executingTypeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="executingTypeLabel.Text" xml:space="preserve">
+    <value>StroopTest</value>
+  </data>
+  <data name="executingTypeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;executingTypeLabel.Name" xml:space="preserve">
+    <value>executingTypeLabel</value>
+  </data>
+  <data name="&gt;&gt;executingTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;executingTypeLabel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;executingTypeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 4</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>969, 42</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="testToolStrip" Row="0" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&lt;Control Name="participantPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="executeButton" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="markPanel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,24.48347,Percent,15.70248,Percent,11.15702,Percent,48.86364" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>654, 17</value>
+  </metadata>
 </root>

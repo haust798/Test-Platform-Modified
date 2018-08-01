@@ -20,7 +20,7 @@
        // properties used to localize strings during runtime
         private ResourceManager LocRM = new ResourceManager("TestPlatform.Resources.Localizations.LocalizedResources", typeof(FormMain).Assembly);
         private CultureInfo currentCulture = CultureInfo.CurrentUICulture;
-
+        
         public bool IsOrderRandom
         {
             get

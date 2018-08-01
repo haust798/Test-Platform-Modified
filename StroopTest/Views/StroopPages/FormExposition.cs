@@ -58,8 +58,9 @@ namespace TestPlatform
         private string currentAudio = "false";
         private int wordCounter = 0, colorCounter = 0, audiocounter = 0, subtitlecounter = 0, imageCounter = 0;
         private bool response;
+        private bool button_clicked = false;
         Stopwatch stopwatchThis = new Stopwatch();
-
+        Random r = new Random();
 
         /// <summary>
         /// This is the constructor method for stroop test exposition form.</summary>
@@ -147,11 +148,6 @@ namespace TestPlatform
                     wordList_orig = currentTest.ProgramInUse.getWordListFile().ListContent.ToArray();
                     colorList = currentTest.ProgramInUse.getColorListFile().ListContent.ToArray();
                     colorList_orig = currentTest.ProgramInUse.getColorListFile().ListContent.ToArray();
-                    if (currentTest.ProgramInUse.ExpositionRandom)
-                    {
-                        wordList = ExpositionController.ShuffleArray(wordList, currentTest.ProgramInUse.NumExpositions, 1);
-                        colorList = ExpositionController.ShuffleArray(colorList, currentTest.ProgramInUse.NumExpositions, 5);
-                    }
                     await startWordExposition();
                     break;
                 case "txtimg":
@@ -258,6 +254,7 @@ namespace TestPlatform
             cts = new CancellationTokenSource();
             try
             {
+                response_label.ForeColor = Color.Black;
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 await Task.Delay(currentTest.ProgramInUse.IntervalTime, cts.Token); // first interval before exposition begins
@@ -269,18 +266,19 @@ namespace TestPlatform
                 // exposition loop
                 for (int counter = 1; counter <= currentTest.ProgramInUse.NumExpositions && runExposition; counter++)
                 {
+                    
+                    // new cancellation token for skipping this word after button clicked
+                    cts = new CancellationTokenSource();
                     subtitleLabel.Visible = false;
                     wordLabel.Visible = false;
-                    await intervalOrFixPoint(currentTest.ProgramInUse, cts.Token);
+                    //await intervalOrFixPoint(currentTest.ProgramInUse, cts.Token);
 
                     drawWord();
-                    response_label.ForeColor = Color.White;
                     button1.Visible = true;
                     button2.Visible = true;
                     wordLabel.Text = currentStimulus;
                     wordLabel.ForeColor = ColorTranslator.FromHtml(currentColor);
                     elapsedTime = stopwatch.ElapsedMilliseconds; // Writes elapsed time
-
                     SendKeys.SendWait(currentTest.Mark.ToString()); //sending event to neuronspectrum
                     showSubtitle();                   
                     wordLabel.Visible = true;
@@ -288,7 +286,17 @@ namespace TestPlatform
                         outputContent, elapsedTime, currentAudio
                         );
 
-                    await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
+                    try
+                    {
+                        await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
+                        response = false;
+                        changeResponseLabelColor(response);
+                        response_label.Text = "Wrong";
+                    }
+                    catch (TaskCanceledException e) {
+                        button_clicked = false;
+                        continue;
+                    }       
                 }
  
                 if (currentTest.ProgramInUse.AudioCapture)
@@ -376,23 +384,19 @@ namespace TestPlatform
 
             // closes form finishing exposition
             Close();
-
         }
 
         private void drawWord()
         {
-            currentStimulus = wordList[wordCounter];
-            currentColor = colorList[colorCounter];
-            wordCounter++;
-
-            if (wordCounter == wordList.Length)
+            int random_index = r.Next(0, wordList.Length);
+            currentStimulus = wordList[random_index];
+            //currentColor = colorList[r.Next(0, colorList.Length)];
+            if (r.Next(0,2)==0)
             {
-                wordCounter = 0;
+                currentColor = colorList[random_index];
             }
-            colorCounter++;
-            if (colorCounter == colorList.Length)
-            {
-                colorCounter = 0;
+            else {
+                currentColor = colorList[r.Next(0, wordList.Length)];
             }
         }
 
@@ -755,8 +759,6 @@ namespace TestPlatform
             }
 
         }
-        
-  
 
         private async Task showInstructions(StroopProgram program, CancellationToken token) 
         {
@@ -844,6 +846,7 @@ namespace TestPlatform
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button_clicked = true;
             if (Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor))
             {
                 response = true;
@@ -853,7 +856,13 @@ namespace TestPlatform
                 response = false;
             }
 
-            // Display right or worng answer
+            changeResponseLabelColor(response);
+            button1.Visible = false;
+            button2.Visible = false;
+            cts.Cancel();
+        }
+
+        private void changeResponseLabelColor(bool response) {
             if (response)
             {
                 response_label.ForeColor = Color.Green;
@@ -864,12 +873,11 @@ namespace TestPlatform
                 response_label.ForeColor = Color.Red;
                 response_label.Text = "Wrong";
             }
-            button1.Visible = false;
-            button2.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button_clicked = true;
             if (!(Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor)))
             {
                 response = true;
@@ -879,19 +887,11 @@ namespace TestPlatform
                 response = false;
             }
 
-            // Display right or worng answer
-            if (response)
-            {
-                response_label.ForeColor = Color.Green;
-                response_label.Text = "Correct";
-            }
-            else
-            {
-                response_label.ForeColor = Color.Red;
-                response_label.Text = "Wrong";
-            }
+            changeResponseLabelColor(response);
             button1.Visible = false;
             button2.Visible = false;
+            cts.Cancel();
+           
         }
 
         // beginAudio

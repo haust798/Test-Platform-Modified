@@ -34,6 +34,7 @@ namespace TestPlatform
         private Control currentPanelContent;
         private ResourceManager LocRM = new ResourceManager("TestPlatform.Resources.Localizations.LocalizedResources", typeof(FormMain).Assembly);
         private CultureInfo currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture;
+        StreamWriter writer = new StreamWriter("C:\\Users\\ZHOQZ\\Documents\\Repos\\temp file writer\\data\\experiment.txt");
 
         /**
          * Constructor method, creates directories for program, in case they dont exist
@@ -161,6 +162,7 @@ namespace TestPlatform
             initializeDefaultPrograms();
 
             InitializeComponent();
+            //serialPort1.Open();
 
             initializeParticipants();
 
@@ -873,5 +875,25 @@ namespace TestPlatform
             }
         }
 
+        private void serialPort1_DataReceived(object sender, System.IO.Ports.SerialDataReceivedEventArgs e)
+        {
+            try
+            {
+                writer.WriteLine(DateTime.UtcNow + "," + serialPort1.ReadLine());
+            }
+            catch (System.Exception ex) { }
+        }
+
+        private long GetTimestamp(DateTime dateTime)
+        {
+            DateTime dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            return (dateTime.Ticks - dt1970.Ticks) / 10000;
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.DoEvents();
+            writer.Close();
+        }
     }
 }
