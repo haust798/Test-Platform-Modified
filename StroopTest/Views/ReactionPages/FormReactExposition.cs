@@ -352,14 +352,14 @@ namespace TestPlatform.Views
 
         private int waitIntervalTime(bool isWaitTimeRandom, int waitTime)
         {
-            int intervalTimeRandom = 10000; // minimal rnd interval time
+            int intervalTimeRandom = 5000; // minimal rnd interval time
             intervalCancelled = false;
 
             // if random interval active, it will be a value between 200 and the defined interval time
-            if (isWaitTimeRandom && waitTime > 10000)
+            if (isWaitTimeRandom && waitTime >5000)
             {
                 Random random = new Random();
-                intervalTimeRandom = random.Next(10000, waitTime);
+                intervalTimeRandom = random.Next(5000, waitTime);
             }
             else
             {

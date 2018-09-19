@@ -44,12 +44,12 @@ namespace TestPlatform.Models
         }
 
         public void writeLineOutputResult(string nameStimulus, string color, int counter,
-                                   List<string> output, float elapsedTime, string audioName)
+                                   List<string> output, float elapsedTime, string audioName, int score)
         {
             // programa\tusuario\tdata\thorario\ttempo(ms)\tsequencia\ttipoEstimulo\tlegenda\tposicaoLegenda\testimulo\tcor
             string[] currentParticipant = participant();
 
-            var text = ProgramInUse.ProgramName + "\t" + currentParticipant[0] + "\t" +
+            var text = ProgramInUse.ProgramName + "\t" + score + "\t" + //final score for each round
                        currentParticipant[1] + "\t" +
                        InitialDate.Day + "/" + InitialDate.Month + "/" + InitialDate.Year + "\t" +
                        DateTime.Now.Hour + ":" + DateTime.Now.Minute + ":" + DateTime.Now.Second + ":" + DateTime.Now.Millisecond + "\t" +

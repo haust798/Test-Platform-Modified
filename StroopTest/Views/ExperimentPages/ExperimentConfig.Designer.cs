@@ -112,7 +112,7 @@
             0});
             resources.ApplyResources(this.intervalTime, "intervalTime");
             this.intervalTime.Maximum = new decimal(new int[] {
-            10000,
+            10000000,
             0,
             0,
             0});

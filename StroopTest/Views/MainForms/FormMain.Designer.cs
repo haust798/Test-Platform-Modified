@@ -745,6 +745,6 @@
         private System.Windows.Forms.RadioButton helpButton;
         private System.Windows.Forms.RadioButton participantButton;
         private System.Windows.Forms.ComboBox participantComboBox;
-        private System.IO.Ports.SerialPort serialPort1;
+        public System.IO.Ports.SerialPort serialPort1;
     }
 }

@@ -135,7 +135,8 @@ namespace TestPlatform.Models
              * stimulus2List stimulus2   
              * stimulus color */
             string[] currentParticipant = participant();
-            var text = ProgramInUse.ProgramName + "\t" + currentParticipant[0] + "\t" +
+            // Timestamp below is final time after user clicked.
+            var text = ProgramInUse.ProgramName + "\t" + GetTimestamp(DateTime.UtcNow) + "\t" +
                        currentParticipant[1] + "\t" + initialDate.Day + "/" +
                        initialDate.Month + "/" + initialDate.Year + "\t" + initialDate.Hour + ":" + initialDate.Minute +
                        ":" + initialDate.Second + ":" + initialDate.Millisecond.ToString() + "\t" + ExpositionTime.Hour + ":" + ExpositionTime.Minute +
@@ -147,6 +148,10 @@ namespace TestPlatform.Models
              
         }
 
-
+        private long GetTimestamp(DateTime dateTime)
+        {
+            DateTime dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+            return (dateTime.Ticks - dt1970.Ticks) / 10000;
+        }
     }
 }

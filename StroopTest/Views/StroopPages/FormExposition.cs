@@ -59,9 +59,11 @@ namespace TestPlatform
         private int wordCounter = 0, colorCounter = 0, audiocounter = 0, subtitlecounter = 0, imageCounter = 0;
         private bool response;
         private bool button_clicked = false;
+        private int score = 0;
         Stopwatch stopwatchThis = new Stopwatch();
         Random r = new Random();
-
+        public DateTime exposotionTime;
+        public DateTime reactionTime;
         /// <summary>
         /// This is the constructor method for stroop test exposition form.</summary>
         /// <param name="prgName"> Program name is the name of the current StroopProgram that wil be executed.</param>
@@ -84,7 +86,7 @@ namespace TestPlatform
 
             configureCurrentTest();
             startExpo();
-
+            stopwatchThis.Start();
             this.ShowDialog();
         }
 
@@ -258,58 +260,56 @@ namespace TestPlatform
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 await Task.Delay(currentTest.ProgramInUse.IntervalTime, cts.Token); // first interval before exposition begins
-                if (currentTest.ProgramInUse.AudioCapture)
-                {
-                    startRecordingAudio();
-                }
-
                 // exposition loop
                 for (int counter = 1; counter <= currentTest.ProgramInUse.NumExpositions && runExposition; counter++)
                 {
-                    
+                    button_clicked = false;
+                    //response_label.Visible = false;
                     // new cancellation token for skipping this word after button clicked
                     cts = new CancellationTokenSource();
                     subtitleLabel.Visible = false;
                     wordLabel.Visible = false;
                     //await intervalOrFixPoint(currentTest.ProgramInUse, cts.Token);
-
+                    
                     drawWord();
                     button1.Visible = true;
                     button2.Visible = true;
+                    
                     wordLabel.Text = currentStimulus;
                     wordLabel.ForeColor = ColorTranslator.FromHtml(currentColor);
                     elapsedTime = stopwatch.ElapsedMilliseconds; // Writes elapsed time
+
+                    // quit after 3 minutes
+                    if (elapsedTime > 180000) {
+                        throw new TaskCanceledException();
+                    }
+
                     SendKeys.SendWait(currentTest.Mark.ToString()); //sending event to neuronspectrum
                     showSubtitle();                   
                     wordLabel.Visible = true;
                     currentTest.writeLineOutputResult( currentStimulus, currentColor, counter,
-                        outputContent, elapsedTime, currentAudio
+                        outputContent, elapsedTime, currentAudio,score
                         );
-
+                    
                     try
                     {
                         await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
-                        response = false;
-                        changeResponseLabelColor(response);
-                        response_label.Text = "Wrong";
+                        // Response label = "Missed" if no keys were pressed
+                        if (button_clicked == false)
+                        {
+                            response = false;
+                            changeResponseLabelColor(response);
+                            response_label.Text = "Missed";
+                        }
                     }
                     catch (TaskCanceledException e) {
                         button_clicked = false;
                         continue;
-                    }       
-                }
- 
-                if (currentTest.ProgramInUse.AudioCapture)
-                {
-                    stopRecordingAudio();
+                    }  
                 }
             }
             catch (TaskCanceledException)
             {
-                if (currentTest.ProgramInUse.AudioCapture)
-                {
-                    stopRecordingAudio();
-                }
                 finishExposition();
             }
             catch (Exception ex)
@@ -350,7 +350,7 @@ namespace TestPlatform
                     wordLabel.Visible = true;
 
                     currentTest.writeLineOutputResult(currentStimulus, currentColor, counter,
-                        outputContent, elapsedTime, currentAudio
+                        outputContent, elapsedTime, currentAudio, score
                         );
 
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
@@ -498,7 +498,7 @@ namespace TestPlatform
 
 
                     currentTest.writeLineOutputResult(currentStimulus, "false", counter + 1,
-                                                        outputContent, elapsedTime, "false");
+                                                        outputContent, elapsedTime, "false", score);
 
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
 
@@ -526,7 +526,7 @@ namespace TestPlatform
                     showSubtitle();
 
                     currentTest.writeLineOutputResult(currentStimulus, "false", counter + 1,
-                                                        outputContent, elapsedTime, "false");
+                                                        outputContent, elapsedTime, "false", score);
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
 
 
@@ -602,7 +602,7 @@ namespace TestPlatform
                     showSubtitle();
 
                     currentTest.writeLineOutputResult(currentStimulus, "false", counter + 1,
-                                                        outputContent, elapsedTime, "false");
+                                                        outputContent, elapsedTime, "false", score);
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
 
                     await Task.Delay(currentTest.ProgramInUse.DelayTime, cts.Token);
@@ -622,7 +622,7 @@ namespace TestPlatform
 
 
                     currentTest.writeLineOutputResult(currentStimulus, "false", counter + 1,
-                                                        outputContent, elapsedTime, "false");
+                                                        outputContent, elapsedTime, "false", score);
 
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
 
@@ -697,7 +697,7 @@ namespace TestPlatform
 
                     currentTest.writeLineOutputResult(currentStimulus, "false",
                                                         counter + 1, outputContent, elapsedTime,
-                                                        StrList.outPutItemName(currentAudio));
+                                                        StrList.outPutItemName(currentAudio), score);
 
                     await Task.Delay(currentTest.ProgramInUse.ExpositionTime, cts.Token);
                     Player.Stop();
@@ -863,16 +863,20 @@ namespace TestPlatform
         }
 
         private void changeResponseLabelColor(bool response) {
+            response_label.Visible = true;
             if (response)
             {
                 response_label.ForeColor = Color.Green;
                 response_label.Text = "Correct";
+                score += 1;
             }
             else
             {
                 response_label.ForeColor = Color.Red;
                 response_label.Text = "Wrong";
+                score -= 1;
             }
+            button_clicked = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -891,7 +895,88 @@ namespace TestPlatform
             button1.Visible = false;
             button2.Visible = false;
             cts.Cancel();
-           
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (button_clicked == true)
+            {
+                return;
+            }
+            if (e.KeyCode == Keys.A)
+            {
+                button_clicked = true;
+                if (Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor))
+                {
+                    response = true;
+                }
+                else
+                {
+                    response = false;
+                }
+
+                changeResponseLabelColor(response);
+                button1.Visible = false;
+                button2.Visible = false;
+                //cts.Cancel();
+            }
+            else if (e.KeyCode == Keys.L)
+            {
+                if (!(Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor)))
+                {
+                    response = true;
+                }
+                else
+                {
+                    response = false;
+                }
+
+                changeResponseLabelColor(response);
+                button1.Visible = false;
+                button2.Visible = false;
+                //cts.Cancel();
+            }
+        }
+
+        private void button2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (button_clicked == true)
+            {
+                return;
+            }
+            if (e.KeyCode == Keys.A)
+            {
+                button_clicked = true;
+                if (Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor))
+                {
+                    response = true;
+                }
+                else
+                {
+                    response = false;
+                }
+
+                changeResponseLabelColor(response);
+                button1.Visible = false;
+                button2.Visible = false;
+                //cts.Cancel();
+            }
+            else if (e.KeyCode == Keys.L)
+            {
+                if (!(Array.FindIndex(wordList_orig, x => x == currentStimulus) == Array.FindIndex(colorList_orig, x => x == currentColor)))
+                {
+                    response = true;
+                }
+                else
+                {
+                    response = false;
+                }
+
+                changeResponseLabelColor(response);
+                button1.Visible = false;
+                button2.Visible = false;
+                //cts.Cancel();
+            }
         }
 
         // beginAudio

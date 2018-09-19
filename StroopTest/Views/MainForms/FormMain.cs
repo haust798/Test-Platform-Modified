@@ -7,6 +7,7 @@ namespace TestPlatform
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.Diagnostics;
     using System.Globalization;
     using System.IO;
     using System.Resources;
@@ -34,7 +35,7 @@ namespace TestPlatform
         private Control currentPanelContent;
         private ResourceManager LocRM = new ResourceManager("TestPlatform.Resources.Localizations.LocalizedResources", typeof(FormMain).Assembly);
         private CultureInfo currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture;
-        StreamWriter writer = new StreamWriter("C:\\Users\\ZHOQZ\\Documents\\Repos\\temp file writer\\data\\experiment.txt");
+        StreamWriter writer = new StreamWriter("C:\\Users\\ZHOQZ\\Documents\\Repos\\Test-Platform-Modified\\StroopTest\\bin\\Debug\\TestFiles\\temp.txt");
 
         /**
          * Constructor method, creates directories for program, in case they dont exist
@@ -162,7 +163,7 @@ namespace TestPlatform
             initializeDefaultPrograms();
 
             InitializeComponent();
-            //serialPort1.Open();
+            serialPort1.Open();
 
             initializeParticipants();
 
@@ -201,8 +202,6 @@ namespace TestPlatform
                 HelpPagesController.showInstructions();
             }
         }
-
-
 
         private void newTextColorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -293,7 +292,6 @@ namespace TestPlatform
         {
             ExpositionController.BeginStroopTest(executingNameLabel.Text, participantComboBox.Text, markTextBox.Text[0], this);
         }
-
 
         private void defineTest()
         {
@@ -469,7 +467,6 @@ namespace TestPlatform
                 currentPanelContent = resultsControl;
             }
         }
-
 
         protected override void OnControlAdded(ControlEventArgs e)
         {
@@ -852,8 +849,6 @@ namespace TestPlatform
             }
         }
 
-
-
         private void participantComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (participantComboBox.SelectedIndex == participantComboBox.Items.Count - 1)
@@ -879,7 +874,8 @@ namespace TestPlatform
         {
             try
             {
-                writer.WriteLine(DateTime.UtcNow + "," + serialPort1.ReadLine());
+                writer.WriteLine(GetTimestamp(DateTime.UtcNow) + "," + serialPort1.ReadLine());
+                //writer.WriteLine(DateTime.UtcNow + "," + serialPort1.ReadLine());
             }
             catch (System.Exception ex) { }
         }
