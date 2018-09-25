@@ -35,8 +35,8 @@ namespace TestPlatform
         private Control currentPanelContent;
         private ResourceManager LocRM = new ResourceManager("TestPlatform.Resources.Localizations.LocalizedResources", typeof(FormMain).Assembly);
         private CultureInfo currentCulture = System.Threading.Thread.CurrentThread.CurrentUICulture;
-        StreamWriter writer = new StreamWriter("C:\\Users\\ZHOQZ\\Documents\\Repos\\Test-Platform-Modified\\StroopTest\\bin\\Debug\\TestFiles\\temp.txt");
-
+        public static StreamWriter writer = new StreamWriter("C:\\Users\\ZHOQZ\\Documents\\Repos\\Test-Platform-Modified\\TestFiles\\temp" + GetTimestamp(DateTime.Now)+".txt");
+        
         /**
          * Constructor method, creates directories for program, in case they dont exist
          * */
@@ -880,7 +880,7 @@ namespace TestPlatform
             catch (System.Exception ex) { }
         }
 
-        private long GetTimestamp(DateTime dateTime)
+        public static long GetTimestamp(DateTime dateTime)
         {
             DateTime dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0);
             return (dateTime.Ticks - dt1970.Ticks) / 10000;

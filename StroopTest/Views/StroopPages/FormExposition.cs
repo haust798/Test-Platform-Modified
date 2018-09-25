@@ -260,6 +260,10 @@ namespace TestPlatform
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 await Task.Delay(currentTest.ProgramInUse.IntervalTime, cts.Token); // first interval before exposition begins
+
+                //Write to file to indicate beginning of task
+                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",-10,-10,-10,-10");
+
                 // exposition loop
                 for (int counter = 1; counter <= currentTest.ProgramInUse.NumExpositions && runExposition; counter++)
                 {
@@ -281,6 +285,7 @@ namespace TestPlatform
 
                     // quit after 3 minutes
                     if (elapsedTime > 180000) {
+                        FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",-10,-10,-10,-10");
                         throw new TaskCanceledException();
                     }
 
