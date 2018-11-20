@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Media;
 using System.Resources;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -70,6 +71,9 @@ namespace TestPlatform.Views
         private Control currentControl = null;
         private SoundPlayer Player = new SoundPlayer();
 
+        long interruptionTimestamp = 0;
+        long reactionTimestamp = 0;
+
         public FormReactExposition(string prgName, string participantName, char mark)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -93,6 +97,13 @@ namespace TestPlatform.Views
             if (executingTest.ProgramInUse.Ready(path))
             {
                 initializeExposition();
+
+                instructionLabel.Text = "";
+                for (int i = 0; i < executingTest.ProgramInUse.InstructionText.Count; i++)
+                    instructionLabel.Text += executingTest.ProgramInUse.InstructionText[i]+"\n";
+
+                // Write to file to indicate start of task
+                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
             }
             else
             {
@@ -108,7 +119,7 @@ namespace TestPlatform.Views
 
                 else
                 {
-                    // do nothing
+                    showInstructions(executingTest.ProgramInUse);
                 }
                 
             }
@@ -215,7 +226,7 @@ namespace TestPlatform.Views
         private async Task exposition()
         {
             cancellationTokenSource = new CancellationTokenSource();
-            await showInstructions(executingTest.ProgramInUse, cancellationTokenSource.Token);
+            //showInstructions(executingTest.ProgramInUse);
             changeBackgroundColor();
 
             await Task.Delay(executingTest.ProgramInUse.IntervalTime, cancellationTokenSource.Token);
@@ -244,17 +255,17 @@ namespace TestPlatform.Views
         }
 
         // show participant instructions to execute during test
-        private async Task showInstructions(ReactionProgram program, CancellationToken token)
+        private void showInstructions(ReactionProgram program)
         {
             if (program.InstructionText != null)
             {
                 instructionLabel.Enabled = true; instructionLabel.Visible = true;
                 for (int i = 0; i < program.InstructionText.Count; i++)
                 {
-                    instructionLabel.Text = program.InstructionText[i];
-                    await Task.Delay(Program.instructionAwaitTime);
+                    instructionLabel.Text += program.InstructionText[i];
+                    //await Task.Delay(Program.instructionAwaitTime);
                 }
-                instructionLabel.Enabled = false; instructionLabel.Visible = false;
+                //instructionLabel.Enabled = false; instructionLabel.Visible = false;
             }
         }
 
@@ -280,6 +291,8 @@ namespace TestPlatform.Views
             }
             else
             {
+                //Write to file to indicate finish of task
+                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
                 CancelExposition();
             }
         }
@@ -289,6 +302,8 @@ namespace TestPlatform.Views
             if (executingTest.ProgramInUse.ResponseType.Equals("space") && keyCode == Keys.Space)
             {
                 SendUserResponse(LocRM.GetString("spaceBar", currentCulture));
+                reactionTimestamp = FormMain.GetTimestamp(DateTime.UtcNow);
+                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",Reaction,0,0,0,"+(reactionTimestamp-interruptionTimestamp).ToString());
             }
             else if (executingTest.ProgramInUse.ResponseType.Equals("arrows"))
             {
@@ -355,11 +370,11 @@ namespace TestPlatform.Views
             int intervalTimeRandom = 5000; // minimal rnd interval time
             intervalCancelled = false;
 
-            // if random interval active, it will be a value between 200 and the defined interval time
+            // if random interval active, it will be a value between 10000 and the defined interval time
             if (isWaitTimeRandom && waitTime >5000)
             {
                 Random random = new Random();
-                intervalTimeRandom = random.Next(5000, waitTime);
+                intervalTimeRandom = random.Next(10000, waitTime);
             }
             else
             {
@@ -426,6 +441,8 @@ namespace TestPlatform.Views
                     drawTriangleShape();
                     break;
             }
+            interruptionTimestamp = FormMain.GetTimestamp(DateTime.UtcNow);
+            FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + "," + "Interruption");
         }
 
         private void drawShape()
@@ -936,8 +953,10 @@ namespace TestPlatform.Views
             Graphics formGraphicsEllipse = CreateGraphics();
 
             Point screenPosition = this.ScreenPosition(new Size((int)widthEllipse, (int)heightEllipse));
-            float xEllipse = screenPosition.X;
-            float yEllipse = screenPosition.Y;
+            //float xEllipse = screenPosition.X;
+            //float yEllipse = screenPosition.Y;
+            float xEllipse = 650;
+            float yEllipse = 10;
             formGraphicsEllipse.FillEllipse(myBrush, xEllipse, yEllipse, widthEllipse, heightEllipse);
             formGraphicsEllipse.Dispose();
             colorCounter++;

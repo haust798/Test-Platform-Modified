@@ -875,9 +875,10 @@ namespace TestPlatform
             try
             {
                 writer.WriteLine(GetTimestamp(DateTime.UtcNow) + "," + serialPort1.ReadLine());
-                //writer.WriteLine(DateTime.UtcNow + "," + serialPort1.ReadLine());
             }
-            catch (System.Exception ex) { }
+            catch (System.Exception ex) {
+                serialPort1.Open();
+            }
         }
 
         public static long GetTimestamp(DateTime dateTime)

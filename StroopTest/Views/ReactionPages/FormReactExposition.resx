@@ -123,6 +123,19 @@
   <metadata name="intervalBW.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>167, 17</value>
   </metadata>
+  <data name="instructionLabel.Text" xml:space="preserve">
+    <value>In reaction to a rigid, overrefined classical curriculum, some educational philosophers have swung sharply to an espousal of “life experience” as the sole source of learning. Using their narrow interpretation of John Dewey’s theories for support and spouting such phrases as “Teach the child, not the subject,” they demand an end to rigorous study and insist that only through doing can learning take place. While not all adherents to this philosophy would totally eliminate the study of great books, the gradual subordination of literature in the school curriculum reflects their influence.
+
+What is the purpose of literature? Why read if life alone is to be our teacher? James Joyce tells us that the artist reveals the human condition by re-creating life out of life; Aristotle, that art presents universal truths because its form is taken from nature. Thus, consciously or otherwise, great writers extend our understanding of ourselves and our world. We can soar with them to the heights of aspiration or plummet with them to the depths of despair. How much wider is the understanding we gain from reading than from viewing life through the keyhole of our individual experience.
+
+This function of literature, the enlarging of our life sphere, is of major importance in itself. Additionally, however, literature suggests solutions to social problems. Federal Judge Learned Hand wrote, “I venture to believe that it is as important to a judge called upon to pass on a question of constitutional law, to have at least a bowing acquaintance with Thucydides, Gibbon, and Carlyle, with Homer, Dante, Shakespeare, and Milton, with Montaigne and Rabelais, with Plato, Bacon, Hume, and Kant, as with the books which have been specifically written on the subject. For in such matters everything turns upon the spirit in which he approaches the questions before him.”
+
+How do we overcome our dissenter? We must start with the field of agreement: the belief that education should serve to improve the individual and society. We must persuade our dissenters that the voices of human experience stretch our human faculties and open us to learning. We must convince them of the unity of life and art. We must prove to them that far from being separate, literature is that part of life that illumines life.
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -262,7 +262,7 @@ namespace TestPlatform
                 await Task.Delay(currentTest.ProgramInUse.IntervalTime, cts.Token); // first interval before exposition begins
 
                 //Write to file to indicate beginning of task
-                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",-10,-10,-10,-10");
+                FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
 
                 // exposition loop
                 for (int counter = 1; counter <= currentTest.ProgramInUse.NumExpositions && runExposition; counter++)
@@ -283,11 +283,13 @@ namespace TestPlatform
                     wordLabel.ForeColor = ColorTranslator.FromHtml(currentColor);
                     elapsedTime = stopwatch.ElapsedMilliseconds; // Writes elapsed time
 
+                    /*
                     // quit after 3 minutes
                     if (elapsedTime > 180000) {
-                        FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",-10,-10,-10,-10");
+                        FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
                         throw new TaskCanceledException();
                     }
+                    */
 
                     SendKeys.SendWait(currentTest.Mark.ToString()); //sending event to neuronspectrum
                     showSubtitle();                   
@@ -308,6 +310,7 @@ namespace TestPlatform
                         }
                     }
                     catch (TaskCanceledException e) {
+                        FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
                         button_clicked = false;
                         continue;
                     }  
@@ -381,6 +384,8 @@ namespace TestPlatform
             wordLabel.Visible = false;
             subtitleLabel.Visible = false;
 
+            // Write to the file to indicate finish of task
+            FormMain.writer.WriteLine(FormMain.GetTimestamp(DateTime.UtcNow) + ",0,0,0,0");
             // return background color to default color
             changeBackgroundColor(false);
 
@@ -468,6 +473,7 @@ namespace TestPlatform
         private async Task startImageWordExposition()
         {
             cts = new CancellationTokenSource();
+            
             try
             {
                 configureImagePictureBox();   
@@ -777,7 +783,7 @@ namespace TestPlatform
                         instructionLabel.Text = program.InstructionText[i];
                         await Task.Delay(Program.instructionAwaitTime, token);
                     }
-                    instructionLabel.Enabled = false; instructionLabel.Visible = false;
+                    instructionLabel.Enabled = false; instructionLabel.Visible = false;     
                 }
             }
             catch (TaskCanceledException)

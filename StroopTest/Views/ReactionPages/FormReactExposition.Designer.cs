@@ -29,22 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReactExposition));
-            this.instructionLabel = new System.Windows.Forms.Label();
             this.expositionBW = new System.ComponentModel.BackgroundWorker();
             this.intervalBW = new System.ComponentModel.BackgroundWorker();
+            this.instructionLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // instructionLabel
-            // 
-            this.instructionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.instructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.instructionLabel.Location = new System.Drawing.Point(449, 280);
-            this.instructionLabel.Name = "instructionLabel";
-            this.instructionLabel.Size = new System.Drawing.Size(695, 524);
-            this.instructionLabel.TabIndex = 12;
-            this.instructionLabel.Text = "instruction";
-            this.instructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.instructionLabel.Visible = false;
             // 
             // expositionBW
             // 
@@ -60,6 +48,16 @@
             this.intervalBW.DoWork += new System.ComponentModel.DoWorkEventHandler(this.intervalBW_DoWork);
             this.intervalBW.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.intervalBW_ProgressChanged);
             this.intervalBW.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.intervalBW_RunWorkerCompleted);
+            // 
+            // instructionLabel
+            // 
+            this.instructionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.instructionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instructionLabel.Location = new System.Drawing.Point(-80, 258);
+            this.instructionLabel.Name = "instructionLabel";
+            this.instructionLabel.Size = new System.Drawing.Size(1830, 817);
+            this.instructionLabel.TabIndex = 12;
+            this.instructionLabel.Text = resources.GetString("instructionLabel.Text");
             // 
             // FormReactExposition
             // 
@@ -81,9 +79,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label instructionLabel;
         private System.ComponentModel.BackgroundWorker expositionBW;
         private System.ComponentModel.BackgroundWorker intervalBW;
+        private System.Windows.Forms.Label instructionLabel;
     }
 }
